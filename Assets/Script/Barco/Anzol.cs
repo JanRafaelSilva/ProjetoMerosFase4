@@ -14,31 +14,32 @@ public class Anzol : MonoBehaviour
     }
     void Start()
     {
-        Vector2 merosP = new Vector2(Meros.transform.position.x, Meros.transform.position.y);
-        direction = merosP - (Vector2) transform.position;
-        rb.linearVelocity = new Vector2(direction.x, direction.y);
+        Pesca(Meros);
     }
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
             col.transform.SetParent(transform);
-            RigidbodyType2D mudar = col.gameObject.GetComponent<RigidbodyType2D>();
-            mudar = RigidbodyType2D.Kinematic;
             pescou = true;
         }
         if (col.gameObject.CompareTag("Barco"))
         {
-            Destroy(gameObject);
+            Destroy(gameObject,1f);
         }
     }
     void Update()
     {
         if(pescou == true)
         {
-            Vector2 barcoP = new Vector2(Barco.transform.position.x, Barco.transform.position.y);
-            direction = barcoP - (Vector2) transform.position;
-            rb.linearVelocity = new Vector2(direction.x, direction.y);
+            Pesca(Barco);
+            pescou = false;
         }
+    }
+    public void Pesca(GameObject move)
+    {
+        Vector2 Gobject = new Vector2(move.transform.position.x, move.transform.position.y);
+        direction = Gobject - (Vector2)transform.position;
+        rb.linearVelocity = new Vector2(direction.x, direction.y);
     }
 }

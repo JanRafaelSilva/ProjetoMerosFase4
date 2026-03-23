@@ -13,6 +13,8 @@ public class MovePlayer : MonoBehaviour
     public float OffsetRadius;
     public float moveMax = 3f;
     public float moveMin = -3f;
+    public Vector3 velocity;
+    public float stop;
     void Awake()
     {
          rb = GetComponent<Rigidbody2D>();
@@ -27,7 +29,6 @@ public class MovePlayer : MonoBehaviour
     }
     private void FixedUpdate()
     {
-         
         Movimento();
     }
     public void Movimento()
@@ -35,8 +36,9 @@ public class MovePlayer : MonoBehaviour
 
         rb.AddForce(direction * speed);
         rb.linearVelocity = new Vector2(Mathf.Clamp(rb.linearVelocity.x, moveMin, moveMax),Mathf.Clamp(rb.linearVelocity.y, moveMin, moveMax));
-        
-        
+        if(direction == Vector2.zero){
+            rb.linearVelocity = Vector2.MoveTowards(rb.linearVelocity, new Vector2(0f, 0f), stop);
+        }
         float anguloAlvo = direction.y * rotacaoMax;
 
         if (transform.localScale.x < 0) anguloAlvo = -anguloAlvo;
