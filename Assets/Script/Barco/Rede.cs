@@ -28,6 +28,6 @@ public class Rede : MonoBehaviour
         //float rangeX = Vector3.Distance(this.transform.position, Player.transform.position);
         //rb = Mathf.Sqrt((rangeX * gravity)); 
         //rigid.linearVelocityX = speedX * Time.fixedDeltaTime;
-        //float rangeMax = rigi
+        //float rangeMax = Mathf.Pow(rigid)
     }
 }
