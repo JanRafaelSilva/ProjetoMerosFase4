@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Barco
   - Anzol
+  - Rede
   layers:
   - Default
   - TransparentFX
