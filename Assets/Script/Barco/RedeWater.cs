@@ -9,7 +9,6 @@ public class Water : MonoBehaviour
 {
     public MoveRede move;
     Rigidbody2D rb;
-    public float timeStop;
     public float moveMin, moveMax;
     bool collision = false;
     private void Awake()
@@ -21,12 +20,13 @@ public class Water : MonoBehaviour
     {
         if (collision)
         {
-            rb.linearVelocity = new Vector2(Mathf.Clamp(rb.linearVelocity.x, moveMin, move.velocityX), Mathf.Clamp(rb.linearVelocity.y, moveMin, moveMax)).normalized;
+            rb.linearVelocity = new Vector2(0, -3f);
         }
         if (transform.position.y <= move.PlayerTrans.position.y)
         {
             rb.gravityScale = 0f;
             rb.linearVelocity = new Vector2(0, 0);
+            this.enabled = false;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
