@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2360478402061852796}
   - component: {fileID: 2756326467677376989}
   - component: {fileID: 410073447492913527}
+  - component: {fileID: 6695645502861911729}
   m_Layer: 0
   m_Name: Epinephelus itajara
   m_TagString: Untagged
@@ -125,6 +126,8 @@ MonoBehaviour:
   moveMin: -3
   velocity: {x: 0, y: 0, z: 0}
   stop: 0.2
+  target: 3
+  step: 1
 --- !u!50 &2360478402061852796
 Rigidbody2D:
   serializedVersion: 5
@@ -217,8 +220,27 @@ MonoBehaviour:
   radius: 3
   timePronto: 1
   AreaLimpa: 0
+  Area: 0
   PermiDesova: 0
   mask:
     serializedVersion: 2
     m_Bits: 64
   alpha: 0.5
+  hitColliders: []
+  circle: -3
+--- !u!114 &6695645502861911729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301803673352401789}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62531734711215b4fa967f2d142a7a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveDesova
+  target: 3
+  step: 1
+  direction: {x: 0, y: 0}
+  movimento: 0

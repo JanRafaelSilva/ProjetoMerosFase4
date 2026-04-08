@@ -4,7 +4,6 @@ using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class Meros : MonoBehaviour
 {
@@ -25,30 +24,35 @@ public class Meros : MonoBehaviour
     public float moveMin = -3f;
     public Vector3 velocity;
     public float stop;
+    
+
+    public float target = 3f;
+    public float step = 1f;
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
     private void Update()
     {
-        if (timeRandom <= 0)
-        {
-            finishTime = true;
-        }
-        if (finishTime)
-        {
-            timeRandom = Random.Range(timeMin, timeMax);
-            direction.x = Random.Range(rangeMinX, rangeMaxX);
-            direction.y = Random.Range(rangeMinY, rangeMaxY);
-            collider = false;
-            finishTime = false;
-        }
-            else if(collider == false)
+       
+            if (timeRandom <= 0)
             {
-            timeRandom -= Time.deltaTime;
-            
+                finishTime = true;
             }
-        HandleFlip();
+            if (finishTime)
+            {
+                DirectionRandom();
+                collider = false;
+                finishTime = false;
+            }
+            else if (collider == false)
+            {
+                timeRandom -= Time.deltaTime;
+
+            }
+        
+
+            HandleFlip();
     }
     private void FixedUpdate()
     {  
@@ -70,6 +74,12 @@ public class Meros : MonoBehaviour
         float zNovo = Mathf.SmoothDampAngle(zAtual, anguloAlvo, ref velRotacao, smoothTime);
         transform.rotation = Quaternion.Euler(0, 0, zNovo);
         }
+    }
+    public void DirectionRandom()
+    {
+        timeRandom = Random.Range(timeMin, timeMax);
+        direction.x = Random.Range(rangeMinX, rangeMaxX);
+        direction.y = Random.Range(rangeMinY, rangeMaxY);
     }
     void HandleFlip()
     {
