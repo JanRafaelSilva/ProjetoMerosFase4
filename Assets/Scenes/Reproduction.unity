@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 106450039}
   - component: {fileID: 106450038}
   - component: {fileID: 106450040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,63 +257,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1001 &185586921
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_Name
-      value: Epinephelus itajara (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -19.603207
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.1792841
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &254207869
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,7 +268,7 @@ GameObject:
   - component: {fileID: 254207870}
   - component: {fileID: 254207872}
   - component: {fileID: 254207871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -463,7 +406,7 @@ GameObject:
   - component: {fileID: 260716007}
   - component: {fileID: 260716009}
   - component: {fileID: 260716008}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -601,7 +544,7 @@ GameObject:
   - component: {fileID: 360450845}
   - component: {fileID: 360450847}
   - component: {fileID: 360450846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +682,7 @@ GameObject:
   - component: {fileID: 376647390}
   - component: {fileID: 376647392}
   - component: {fileID: 376647391}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -866,121 +809,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1001 &387641325
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_Name
-      value: Epinephelus itajara (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.2186847
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -14.489169
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
---- !u!1001 &513302474
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_Name
-      value: Epinephelus itajara (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -13.654705
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -15.09754
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
---- !u!1001 &572060306
+--- !u!1001 &489493403
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -994,11 +823,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.2587843
+      value: 16.29968
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.298183
+      value: -4.729082
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1048,7 +877,7 @@ GameObject:
   - component: {fileID: 592740097}
   - component: {fileID: 592740099}
   - component: {fileID: 592740098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1175,63 +1004,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1001 &638511002
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_Name
-      value: Epinephelus itajara (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 18.048079
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.3754368
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &751595291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,7 +1015,7 @@ GameObject:
   - component: {fileID: 751595292}
   - component: {fileID: 751595294}
   - component: {fileID: 751595293}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1381,7 +1153,7 @@ GameObject:
   - component: {fileID: 826651629}
   - component: {fileID: 826651631}
   - component: {fileID: 826651630}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1508,7 +1280,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1001 &933184667
+--- !u!1001 &970024150
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1518,15 +1290,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_Name
-      value: Epinephelus itajara (12)
+      value: Epinephelus itajara
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.304516
+      value: -10.870858
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.055696
+      value: -12.954407
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1565,7 +1337,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
---- !u!1001 &943898095
+--- !u!1001 &994121918
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1575,15 +1347,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_Name
-      value: Epinephelus itajara (1)
+      value: Epinephelus itajara (9)
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.36568
+      value: 20.951706
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.49883
+      value: -0.2793169
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1633,7 +1405,7 @@ GameObject:
   - component: {fileID: 1105334765}
   - component: {fileID: 1105334767}
   - component: {fileID: 1105334766}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1771,7 +1543,7 @@ GameObject:
   - component: {fileID: 1118586179}
   - component: {fileID: 1118586181}
   - component: {fileID: 1118586180}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1898,6 +1670,63 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1140883675
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.30931
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.7625723
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &1153441561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1909,7 +1738,7 @@ GameObject:
   - component: {fileID: 1153441562}
   - component: {fileID: 1153441564}
   - component: {fileID: 1153441563}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2036,6 +1865,177 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1211482339
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.816862
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.763455
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+--- !u!1001 &1221493648
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+--- !u!1001 &1284835092
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.646413
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.381111
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &1356864543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,7 +2098,7 @@ GameObject:
   - component: {fileID: 1443210398}
   - component: {fileID: 1443210400}
   - component: {fileID: 1443210399}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2225,120 +2225,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1001 &1464189604
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_Name
-      value: Epinephelus itajara (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.1768396
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -11.582518
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
---- !u!1001 &1517079049
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_Name
-      value: Epinephelus itajara (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.775953
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.5245783
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &1562640623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,7 +2236,7 @@ GameObject:
   - component: {fileID: 1562640624}
   - component: {fileID: 1562640626}
   - component: {fileID: 1562640625}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2488,7 +2374,7 @@ GameObject:
   - component: {fileID: 1578810980}
   - component: {fileID: 1578810982}
   - component: {fileID: 1578810981}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2504,8 +2390,8 @@ Transform:
   m_GameObject: {fileID: 1578810979}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.1095, y: -12.9568, z: 0}
-  m_LocalScale: {x: 53.263844, y: 1.9173374, z: 1}
+  m_LocalPosition: {x: 9.1095, y: -14.339, z: 0}
+  m_LocalScale: {x: 53.263844, y: 1.3105389, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1356864544}
@@ -2615,124 +2501,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1001 &1581102695
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_Name
-      value: Epinephelus itajara (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -15.682606
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -7.4591293
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
---- !u!1001 &1591544107
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2144111218614557254, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4808798363118506791, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-      propertyPath: m_Name
-      value: Meros
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
 --- !u!1 &1628787007
 GameObject:
   m_ObjectHideFlags: 0
@@ -2744,7 +2512,7 @@ GameObject:
   - component: {fileID: 1628787008}
   - component: {fileID: 1628787010}
   - component: {fileID: 1628787009}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2871,63 +2639,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1001 &1685641381
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_Name
-      value: Epinephelus itajara (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &1730710571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2939,7 +2650,7 @@ GameObject:
   - component: {fileID: 1730710572}
   - component: {fileID: 1730710574}
   - component: {fileID: 1730710573}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3077,7 +2788,7 @@ GameObject:
   - component: {fileID: 1748529371}
   - component: {fileID: 1748529373}
   - component: {fileID: 1748529372}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3215,7 +2926,7 @@ GameObject:
   - component: {fileID: 1755464229}
   - component: {fileID: 1755464231}
   - component: {fileID: 1755464230}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3344,8 +3055,8 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!1 &1756766795 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4808798363118506791, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-  m_PrefabInstance: {fileID: 1591544107}
+  m_CorrespondingSourceObject: {fileID: 1784837881984450121, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
+  m_PrefabInstance: {fileID: 4307012678180897955}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1786188504
 GameObject:
@@ -3358,7 +3069,7 @@ GameObject:
   - component: {fileID: 1786188505}
   - component: {fileID: 1786188507}
   - component: {fileID: 1786188506}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3496,7 +3207,7 @@ GameObject:
   - component: {fileID: 1951422919}
   - component: {fileID: 1951422921}
   - component: {fileID: 1951422920}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pedra (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3623,7 +3334,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1001 &2005159035
+--- !u!1001 &2020493768
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3633,15 +3344,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_Name
-      value: Epinephelus itajara (10)
+      value: Epinephelus itajara (2)
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.004092
+      value: -2.9152174
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.0395994
+      value: -7.088806
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3771,6 +3482,120 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2056551441
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.4336405
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.572063
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+--- !u!1001 &2079979231
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.647649
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.662102
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &2136669253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3925,7 +3750,7 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!1001 &4032556921359275112
+--- !u!1001 &4307012678180897955
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3933,47 +3758,47 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+    - target: {fileID: 1784837881984450121, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
       propertyPath: m_Name
-      value: Epinephelus itajara
+      value: Meros
       objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+    - target: {fileID: 6349982443802233071, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.36525
+      value: 0.08
       objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+    - target: {fileID: 6349982443802233071, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9292
+      value: -0.17
       objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+    - target: {fileID: 6349982443802233071, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+    - target: {fileID: 6349982443802233071, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+    - target: {fileID: 6349982443802233071, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+    - target: {fileID: 6349982443802233071, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+    - target: {fileID: 6349982443802233071, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+    - target: {fileID: 6349982443802233071, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+    - target: {fileID: 6349982443802233071, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+    - target: {fileID: 6349982443802233071, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -3981,7 +3806,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 18f1676cae5ae8c42b1b3dbf377d5a6c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3989,17 +3814,14 @@ SceneRoots:
   - {fileID: 2136669256}
   - {fileID: 2043693108}
   - {fileID: 1356864544}
-  - {fileID: 1591544107}
-  - {fileID: 4032556921359275112}
-  - {fileID: 943898095}
-  - {fileID: 1685641381}
-  - {fileID: 1464189604}
-  - {fileID: 572060306}
-  - {fileID: 513302474}
-  - {fileID: 1581102695}
-  - {fileID: 185586921}
-  - {fileID: 1517079049}
-  - {fileID: 387641325}
-  - {fileID: 2005159035}
-  - {fileID: 638511002}
-  - {fileID: 933184667}
+  - {fileID: 4307012678180897955}
+  - {fileID: 970024150}
+  - {fileID: 1284835092}
+  - {fileID: 2020493768}
+  - {fileID: 1140883675}
+  - {fileID: 489493403}
+  - {fileID: 2079979231}
+  - {fileID: 1221493648}
+  - {fileID: 2056551441}
+  - {fileID: 1211482339}
+  - {fileID: 994121918}

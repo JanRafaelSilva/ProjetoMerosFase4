@@ -46,9 +46,10 @@ public class Meros : MonoBehaviour
             else if(collider == false)
             {
             timeRandom -= Time.deltaTime;
-            HandleFlip();
-        }
-        }
+            
+            }
+        HandleFlip();
+    }
     private void FixedUpdate()
     {  
        Movimento();
@@ -58,11 +59,8 @@ public class Meros : MonoBehaviour
 
         rb.AddForce(direction * speed);
         rb.linearVelocity = new Vector2(Mathf.Clamp(rb.linearVelocity.x, moveMin, moveMax), Mathf.Clamp(rb.linearVelocity.y, moveMin, moveMax));
-        if (direction == Vector2.zero)
-        {
-            rb.linearVelocity = Vector2.MoveTowards(rb.linearVelocity, new Vector2(0f, 0f), stop);
-        }
-        float anguloAlvo = direction.y * rotacaoMax;
+        if (collider == false) { 
+            float anguloAlvo = direction.y * rotacaoMax;
 
         if (transform.localScale.x < 0) anguloAlvo = -anguloAlvo;
 
@@ -71,6 +69,7 @@ public class Meros : MonoBehaviour
 
         float zNovo = Mathf.SmoothDampAngle(zAtual, anguloAlvo, ref velRotacao, smoothTime);
         transform.rotation = Quaternion.Euler(0, 0, zNovo);
+        }
     }
     void HandleFlip()
     {
@@ -99,19 +98,25 @@ public class Meros : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collider = true;
-        direction = Vector2.zero;
-        coroutine = WaitAndPrint(2.0f, collision.gameObject);
-        StartCoroutine(coroutine);
+        if (collision.gameObject.layer == 6)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+            collider = true;
+            direction = Vector2.zero;
+            coroutine = WaitAndPrint(2.0f, collision.gameObject);
+            StartCoroutine(coroutine);
+        }
     }
+
     private IEnumerator WaitAndPrint(float waitTime, GameObject col)
     {
         yield return new WaitForSeconds(waitTime);
-        direction.x = transform.position.x >= col.transform.position.x ? 2f : -2f;
-        direction.x = transform.position.x <= col.transform.position.x ? -2f : 2f;
-        direction.y = transform.position.y >= col.transform.position.y ? 2f : -2f;
-        direction.y = transform.position.y <= col.transform.position.y ? -2f : 2f;
-        yield return new WaitForSeconds(waitTime);
+        direction.x = transform.position.x >= col.transform.position.x ? rangeMaxX : rangeMinX;
+        direction.x = transform.position.x <= col.transform.position.x ? rangeMinX : rangeMaxX;
+        direction.y = transform.position.y >= col.transform.position.y ? rangeMaxY : rangeMinY;
+        direction.y = transform.position.y <= col.transform.position.y ? rangeMinY : rangeMaxY;
+        yield return new WaitForSeconds(waitTime * waitTime);
         finishTime = true;
     }
 }
