@@ -111,14 +111,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca94b83a4776af24789a1dd708803d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rede
-  Player: {fileID: 0}
+  Player: {fileID: 4808798363118506791, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
   rot: 0
-  angleI: 90
   timer: 0
   velocityX: 0
   velocityY: 0
-  time: 1
-  PlayerTrans: {fileID: 0}
+  time: 0
 --- !u!212 &9116352561009439493
 SpriteRenderer:
   serializedVersion: 2

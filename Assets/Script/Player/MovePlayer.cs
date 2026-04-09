@@ -54,11 +54,11 @@ public class MovePlayer : MonoBehaviour
         float escalaAntiga = transform.localScale.x;
         if (direction.x > 0.1f) 
         {
-            transform.localScale = new Vector3(2, 1, 1);
+            transform.localScale = new Vector3(1, 1, 1);
         }
         else if (direction.x < -0.1f)
         {
-            transform.localScale = new Vector3(-2, 1, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
 
         if (transform.localScale.x != escalaAntiga)

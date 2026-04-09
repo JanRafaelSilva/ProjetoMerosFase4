@@ -8,12 +8,14 @@ public class Anzol : MonoBehaviour
     public float speed = 10f;
     Rigidbody2D rb;
     public bool pescou = false;
+    public float timerD;
     void Awake()
     {
         rb = GetComponentInParent<Rigidbody2D>();
     }
     void Start()
     {
+        Meros = GameObject.FindGameObjectWithTag("Player");
         Pesca(Meros);
     }
     void OnCollisionEnter2D(Collision2D col)
@@ -30,16 +32,22 @@ public class Anzol : MonoBehaviour
     }
     void Update()
     {
+        timerD += Time.deltaTime;
         if(pescou == true)
         {
             Pesca(Barco);
             pescou = false;
         }
+        if (timerD >= 10f) 
+        {
+            Destroy(this.gameObject);
+        }
+
     }
     public void Pesca(GameObject move)
-    {
+    { 
         Vector2 Gobject = new Vector2(move.transform.position.x, move.transform.position.y);
-        direction = Gobject - (Vector2)transform.position;
-        rb.linearVelocity = new Vector2(direction.x, direction.y);
+        direction = (Gobject - (Vector2)transform.position).normalized;
+        rb.linearVelocity = new Vector2(direction.x * speed, direction.y * speed);
     }
 }

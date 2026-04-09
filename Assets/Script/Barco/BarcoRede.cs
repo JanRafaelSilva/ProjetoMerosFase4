@@ -5,10 +5,15 @@ public class BarcoRede : MonoBehaviour
 {
     public GameObject Player;
     public GameObject Rede;
+    public MoveRede rede;
     public float distance = 20;
     float timer;
     public bool found = false;
     public float redeTime = 3f;
+    private void Awake()
+    {
+        rede = GetComponent<MoveRede>();
+    }
     public void RayQuest()
     {
         found = Physics2D.Raycast (transform.position, new Vector2(Player.transform.position.x, Player.transform.position.y), distance, LayerMask.NameToLayer("Player")); 
@@ -24,7 +29,8 @@ public class BarcoRede : MonoBehaviour
             timer += Time.deltaTime;
             if(timer > redeTime)
             {
-                Instantiate(Rede, transform.position, Quaternion.identity);
+                Instantiate(Rede, new Vector2(transform.position.x + 5f, transform.position.y + 2f), Quaternion.identity);
+                //rede.
                 timer = 0f;
             }
         }

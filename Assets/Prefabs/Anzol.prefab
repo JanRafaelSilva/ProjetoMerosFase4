@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -106,9 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fdbdc626cce80a46bcc53e6364a46f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Anzol
-  Meros: {fileID: 0}
-  Barco: {fileID: 0}
-  speed: 1
+  Meros: {fileID: 4808798363118506791, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
+  Barco: {fileID: 398549268990309973}
+  speed: 8
   pescou: 0
 --- !u!50 &5647039231738281122
 Rigidbody2D:
@@ -118,7 +118,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398549268990309973}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

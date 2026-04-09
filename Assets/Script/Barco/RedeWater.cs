@@ -22,7 +22,7 @@ public class Water : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(0, -3f);
         }
-        if (transform.position.y <= move.PlayerTrans.position.y)
+        if (transform.position.y <= move.Player.transform.position.y)
         {
             rb.gravityScale = 0f;
             rb.linearVelocity = new Vector2(0, 0);
