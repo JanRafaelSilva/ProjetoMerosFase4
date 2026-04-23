@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7509665237969318443}
   - component: {fileID: 7772506092219849031}
   - component: {fileID: 1492137970013575364}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pedra
   m_TagString: Untagged
   m_Icon: {fileID: 0}

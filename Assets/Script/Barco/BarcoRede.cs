@@ -3,20 +3,26 @@ using UnityEngine;
 
 public class BarcoRede : MonoBehaviour
 {
-    public GameObject Player;
+    public Transform Player;
     public GameObject Rede;
-    public MoveRede rede;
-    public float distance = 20;
-    float timer;
-    public bool found = false;
+    public float timer;
     public float redeTime = 3f;
-    private void Awake()
-    {
-        rede = GetComponent<MoveRede>();
-    }
+
+    //raycast
+    private int bitMero,bitPedra;
+    private int 
+    maskMero = 7, 
+    maskPedra = 6;
+    private bool vision;
+
     public void RayQuest()
     {
-        found = Physics2D.Raycast (transform.position, new Vector2(Player.transform.position.x, Player.transform.position.y), distance, LayerMask.NameToLayer("Player")); 
+        // 1 == true - número da layer recebe 1.
+        bitMero = 1 << maskMero;
+        bitPedra = 1 << maskPedra;
+        // vision = true - mero na visão, = false - pedra na visão.
+        vision = Physics2D.Raycast (transform.position, Player.transform.position,Vector3.Distance(transform.position, Player.transform.position), bitMero) 
+        || !Physics2D.Raycast (transform.position, Player.transform.position,Vector3.Distance(transform.position, Player.transform.position), bitPedra); 
     }
     void FixedUpdate()
     {
@@ -24,13 +30,14 @@ public class BarcoRede : MonoBehaviour
     }
     void Update()
     {
-        if (found)
-        {
+        if (vision == true)
+        { 
+            //tempo para identificar o mero
             timer += Time.deltaTime;
             if(timer > redeTime)
             {
+                //lançar rede
                 Instantiate(Rede, new Vector2(transform.position.x + 5f, transform.position.y + 2f), Quaternion.identity);
-                //rede.
                 timer = 0f;
             }
         }
