@@ -6,7 +6,7 @@ public class MoveRede : MonoBehaviour
     Rigidbody2D rb;
     public GameObject Player;
     float gravity = 10f;
-    public float rot;
+    float rot;
     public float timer;
     float velocity = 10;
     public float velocityX;
@@ -23,7 +23,7 @@ public class MoveRede : MonoBehaviour
     }
     void Start()
     {
-        direction = new Vector2(Player.transform.position.x - transform.position.x, Player.transform.position.y - transform.position.y);
+        direction = new Vector2(Player.transform.position.x + 5 - transform.position.x, Player.transform.position.y - transform.position.y);
         rot = ((Mathf.Atan2(-direction.x, direction.y)) + Mathf.PI / 2f  ) * -1;
         time = Mathf.Sqrt((2*(direction.x * Mathf.Tan(rot)))/gravity);
         velocity = (direction.x) / (Mathf.Cos(rot) * time);
