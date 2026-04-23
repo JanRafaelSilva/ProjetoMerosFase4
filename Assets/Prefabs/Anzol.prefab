@@ -106,10 +106,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fdbdc626cce80a46bcc53e6364a46f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Anzol
-  Meros: {fileID: 4808798363118506791, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-  Barco: {fileID: 398549268990309973}
+  Barco: {fileID: 1935316377711432161, guid: 9f973ac1c2dccab42a00775ba9eb0d1f, type: 3}
+  Mero: {fileID: 0}
   speed: 8
+  rb: {fileID: 5647039231738281122}
   pescou: 0
+  timerD: 0
 --- !u!50 &5647039231738281122
 Rigidbody2D:
   serializedVersion: 5
