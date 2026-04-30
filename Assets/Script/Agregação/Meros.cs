@@ -7,13 +7,14 @@ using UnityEngine.InputSystem;
 
 public class Meros : MonoBehaviour
 {
+    public Vector2 direction;
+    public Vector3 velocity;
     public float timeRandom,timeMin,timeMax;
     public bool finishTime;
-    public float rangeMinX, rangeMaxX, rangeMinY, rangeMaxY;
+    public float moveMinX, moveMaxX, moveMinY, moveMaxY;
+    public float posRangeMinX, posRangeMaxX, posRangeMinY, posRangeMaxY;
     private IEnumerator coroutine;
     public bool collider = false;
-
-    public Vector2 direction;
     private Rigidbody2D rb;
     public float speed = 0.05f;
     public float rotacaoMax = 20f;
@@ -22,12 +23,12 @@ public class Meros : MonoBehaviour
     public float OffsetRadius;
     public float moveMax = 3f;
     public float moveMin = -3f;
-    public Vector3 velocity;
     public float stop;
     
 
     public float target = 3f;
     public float step = 1f;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -55,11 +56,28 @@ public class Meros : MonoBehaviour
             HandleFlip();
     }
     private void FixedUpdate()
-    {  
-       Movimento();
+    {
+
+        Movimento();
     }
     public void Movimento()
     {
+        if(transform.position.x > posRangeMaxX)
+        {
+            direction.x = moveMinX;
+        }
+        else if(transform.position.x < posRangeMinX)
+        {
+            direction.x = moveMaxX;
+        }
+        if(transform.position.y > posRangeMaxY)
+        {
+            direction.x = moveMinY;
+        }
+        else if (transform.position.y < posRangeMinY)
+        {
+            direction.y = moveMinY;
+        }
 
         rb.AddForce(direction * speed);
         rb.linearVelocity = new Vector2(Mathf.Clamp(rb.linearVelocity.x, moveMin, moveMax), Mathf.Clamp(rb.linearVelocity.y, moveMin, moveMax));
@@ -78,8 +96,8 @@ public class Meros : MonoBehaviour
     public void DirectionRandom()
     {
         timeRandom = Random.Range(timeMin, timeMax);
-        direction.x = Random.Range(rangeMinX, rangeMaxX);
-        direction.y = Random.Range(rangeMinY, rangeMaxY);
+        direction.x = Random.Range(moveMinX, moveMaxX);
+        direction.y = Random.Range(moveMinY, moveMaxY);
     }
     void HandleFlip()
     {
@@ -122,10 +140,10 @@ public class Meros : MonoBehaviour
     private IEnumerator WaitAndPrint(float waitTime, GameObject col)
     {
         yield return new WaitForSeconds(waitTime);
-        direction.x = transform.position.x >= col.transform.position.x ? rangeMaxX : rangeMinX;
-        direction.x = transform.position.x <= col.transform.position.x ? rangeMinX : rangeMaxX;
-        direction.y = transform.position.y >= col.transform.position.y ? rangeMaxY : rangeMinY;
-        direction.y = transform.position.y <= col.transform.position.y ? rangeMinY : rangeMaxY;
+        direction.x = transform.position.x >= col.transform.position.x ? moveMaxX : moveMinX;
+        direction.x = transform.position.x <= col.transform.position.x ? moveMinX : moveMaxX;
+        direction.y = transform.position.y >= col.transform.position.y ? moveMaxY : moveMinY;
+        direction.y = transform.position.y <= col.transform.position.y ? moveMinY : moveMaxY;
         yield return new WaitForSeconds(waitTime * waitTime);
         finishTime = true;
     }

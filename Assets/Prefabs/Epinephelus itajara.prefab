@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 4523529221508790123}
   - component: {fileID: 2360478402061852796}
   - component: {fileID: 2756326467677376989}
-  - component: {fileID: 410073447492913527}
-  - component: {fileID: 6695645502861911729}
   m_Layer: 0
   m_Name: Epinephelus itajara
   m_TagString: Untagged
@@ -109,8 +107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Meros
   timeRandom: 0
-  timeMin: 5
-  timeMax: 20
+  timeMin: 1
+  timeMax: 3
   finishTime: 1
   rangeMinX: -2
   rangeMaxX: 2
@@ -201,46 +199,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &410073447492913527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301803673352401789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7a13cfc3c28fe84286908a5a10d07fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Desova
-  Espera: 0
-  TDesova: 0
-  Tmax: 10
-  Tmin: 7
-  radius: 3
-  timePronto: 1
-  AreaLimpa: 0
-  Area: 0
-  PermiDesova: 0
-  mask:
-    serializedVersion: 2
-    m_Bits: 64
-  alpha: 0.5
-  hitColliders: []
-  circle: -3
---- !u!114 &6695645502861911729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301803673352401789}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62531734711215b4fa967f2d142a7a47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoveDesova
-  target: 3
-  step: 1
-  direction: {x: 0, y: 0}
-  movimento: 0
