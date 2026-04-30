@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5647039231738281122}
   - component: {fileID: 1623630900799110158}
   m_Layer: 0
-  m_Name: Anzol
+  m_Name: Harpoon
   m_TagString: Anzol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

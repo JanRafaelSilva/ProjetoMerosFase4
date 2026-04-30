@@ -1,17 +1,17 @@
 using System.IO;
 using UnityEngine;
 
-public class BoatAnzol : MonoBehaviour
+public class BoatHarpoon : MonoBehaviour
 {
     public float timer, timerMax;
-    public Anzol anzol;
-    BoatAnzol my;
-    public GameObject Anzol;
+    private Harpoon arm;
+    BoatHarpoon my;
+    public GameObject harpoon;
     public Transform Mero;
     public void Awake()
     {
-        anzol = Anzol.GetComponent<Anzol>();
-        my = GetComponent<BoatAnzol>();
+        arm = harpoon.GetComponent<Harpoon>();
+        my = GetComponent<BoatHarpoon>();
     }
     private void Update()
     {
@@ -28,8 +28,8 @@ public class BoatAnzol : MonoBehaviour
     }
     void ins()
     {
-        Instantiate(Anzol, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
-        anzol.PlayerScene(Mero, transform);
+        Instantiate(arm, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+        arm.PlayerScene(Mero, transform);
         timer = 0;
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 using UnityEngine.SocialPlatforms;
 using static UnityEngine.GraphicsBuffer;
 
-public class Water : MonoBehaviour
+public class FishnetWater : MonoBehaviour
 {
     public MoveRede move;
     Rigidbody2D rb;

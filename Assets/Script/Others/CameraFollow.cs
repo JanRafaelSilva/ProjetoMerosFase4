@@ -21,6 +21,14 @@ public class CameraFollow : MonoBehaviour
         {
             posiY = player.transform.position.y;
         }
-        transform.position = Vector3.SmoothDamp(transform.position, new Vector3(player.transform.position.x, 0f + posiY, player.transform.position.z) + offset, ref velocity, smoothTime);
+        else
+        {
+            posiY = 0f;
+        }
+            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(player.transform.position.x, 0f + posiY, player.transform.position.z) + offset, ref velocity, smoothTime);
+    }
+    public void QuickTimeEvent(bool Y)
+    {
+        this.Y = Y;
     }
 }

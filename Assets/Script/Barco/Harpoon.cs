@@ -1,16 +1,18 @@
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
-public class Anzol : MonoBehaviour
+public class Harpoon : MonoBehaviour
 {
     public Transform Barco;
     public Transform Mero;
     Vector3 direction;
-    private float speed = 8f;
+    private float speed = 6f;
     public Rigidbody2D rb;
     public bool 
     pescou = false,
     puxando = false;
     public float timerD;
+    
     public void PlayerScene(Transform Mero, Transform Barco)
     {
         // Posições do Mero e do Barco
@@ -51,14 +53,18 @@ public class Anzol : MonoBehaviour
     }
     void Update()
     {
+
         //tempo de vida
-        timerD += Time.deltaTime;
+        if (pescou == true || puxando == true)
+        {
+            timerD += Time.deltaTime;
+        }
         //direção - Barco
         if(pescou == true)
         {
-            Pesca(Barco);
-            pescou = false;
-            puxando = true;
+                Pesca(Barco);
+                pescou = false;
+                puxando = true;
         }
         // Fim
         if (timerD >= 10f) 

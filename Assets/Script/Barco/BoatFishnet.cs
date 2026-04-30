@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class BarcoRede : MonoBehaviour
+public class BoatFishnet : MonoBehaviour
 {
     public Transform Player;
     public GameObject Rede;
