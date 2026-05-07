@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class MovePlayer : MonoBehaviour
 {
-    Vector2 direction;
+    public Vector2 direction;
     private Rigidbody2D rb;
     public float speed = 0.05f;
     public float rotacaoMax = 20f;

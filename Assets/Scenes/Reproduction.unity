@@ -119,6 +119,86 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &32074079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 32074081}
+  - component: {fileID: 32074083}
+  - component: {fileID: 32074082}
+  m_Layer: 0
+  m_Name: NavMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &32074081
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32074079}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.07, y: -11.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &32074082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32074079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04976799df50f54ba128eff723155a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshSurface
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 1
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_MinRegionArea: 0
+  m_HideEditorLogs: 0
+  m_NavMeshData: {fileID: 23800000, guid: 4e8f01da254e8904199d07286947e0b0, type: 2}
+--- !u!114 &32074083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32074079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70bd44a44cd62c64fbfc1eea95b24880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Extensions.CollectSources2d
+  m_OverrideByGrid: 0
+  m_UseMeshPrefab: {fileID: 0}
+  m_CompressBounds: 0
+  m_OverrideVector: {x: 1, y: 1, z: 1}
 --- !u!1 &106450037
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +210,7 @@ GameObject:
   - component: {fileID: 106450039}
   - component: {fileID: 106450038}
   - component: {fileID: 106450040}
+  - component: {fileID: 106450041}
   m_Layer: 6
   m_Name: pedra
   m_TagString: Untagged
@@ -257,6 +338,79 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &106450041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106450037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!1001 &180987230
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.271841
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -14.378124
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &254207869
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +422,7 @@ GameObject:
   - component: {fileID: 254207870}
   - component: {fileID: 254207872}
   - component: {fileID: 254207871}
+  - component: {fileID: 254207873}
   m_Layer: 6
   m_Name: pedra (11)
   m_TagString: Untagged
@@ -395,6 +550,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &254207873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254207869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &260716006
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +577,7 @@ GameObject:
   - component: {fileID: 260716007}
   - component: {fileID: 260716009}
   - component: {fileID: 260716008}
+  - component: {fileID: 260716010}
   m_Layer: 6
   m_Name: pedra (2)
   m_TagString: Untagged
@@ -533,6 +705,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &260716010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260716006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &360450844
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +732,7 @@ GameObject:
   - component: {fileID: 360450845}
   - component: {fileID: 360450847}
   - component: {fileID: 360450846}
+  - component: {fileID: 360450848}
   m_Layer: 6
   m_Name: pedra (17)
   m_TagString: Untagged
@@ -671,6 +860,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &360450848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360450844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &376647389
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,6 +887,7 @@ GameObject:
   - component: {fileID: 376647390}
   - component: {fileID: 376647392}
   - component: {fileID: 376647391}
+  - component: {fileID: 376647393}
   m_Layer: 6
   m_Name: pedra (3)
   m_TagString: Untagged
@@ -809,6 +1015,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &376647393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376647389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &592740096
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,6 +1042,7 @@ GameObject:
   - component: {fileID: 592740097}
   - component: {fileID: 592740099}
   - component: {fileID: 592740098}
+  - component: {fileID: 592740100}
   m_Layer: 6
   m_Name: pedra (14)
   m_TagString: Untagged
@@ -947,6 +1170,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &592740100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592740096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &644998931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +1276,7 @@ GameObject:
   - component: {fileID: 751595292}
   - component: {fileID: 751595294}
   - component: {fileID: 751595293}
+  - component: {fileID: 751595295}
   m_Layer: 6
   m_Name: pedra (12)
   m_TagString: Untagged
@@ -1164,6 +1404,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &751595295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751595291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &826651628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,6 +1431,7 @@ GameObject:
   - component: {fileID: 826651629}
   - component: {fileID: 826651631}
   - component: {fileID: 826651630}
+  - component: {fileID: 826651632}
   m_Layer: 6
   m_Name: pedra (8)
   m_TagString: Untagged
@@ -1302,42 +1559,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &910908098 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-  m_PrefabInstance: {fileID: 970024150}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &910908106
+--- !u!114 &826651632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 910908098}
+  m_GameObject: {fileID: 826651628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: beb75b6107ae66d4c8827833b15da9a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoveMero
-  direction: {x: 0.5, y: 0.3}
-  speed: 0.05
-  rotacaoMax: 20
-  smoothTime: 0.5
-  OffsetRadius: 0
-  moveMax: 3
-  moveMin: -3
-  velocity: {x: 0, y: 0, z: 0}
-  stop: 0
-  colliderFundo: 0
-  timeRandom: 0
-  timeMin: 10
-  timeMax: 20
-  moveMinX: -1
-  moveMaxX: 1
-  moveMinY: -1
-  moveMaxY: 1
-  meio: {fileID: 1860563156}
-  a: {x: 0, y: 0, z: 0}
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &970024150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1349,10 +1586,6 @@ PrefabInstance:
     - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_Name
       value: Epinephelus itajara
-      objectReference: {fileID: 0}
-    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1394,70 +1627,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2360478402061852796, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 2360478402061852796, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_IncludeLayers.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 2756326467677376989, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2756326467677376989, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: m_ContactCaptureLayers.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 4523529221508790123, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: timeMax
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4523529221508790123, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: timeMin
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4523529221508790123, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: moveMaxX
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4523529221508790123, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: moveMaxY
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4523529221508790123, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: moveMinX
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4523529221508790123, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: moveMinY
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4523529221508790123, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: posRangeMaxX
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 4523529221508790123, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: posRangeMaxY
-      value: -11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4523529221508790123, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: posRangeMinX
-      value: -19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4523529221508790123, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      propertyPath: posRangeMinY
-      value: -18
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4523529221508790123, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 910908106}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &1105334764
 GameObject:
@@ -1470,6 +1643,7 @@ GameObject:
   - component: {fileID: 1105334765}
   - component: {fileID: 1105334767}
   - component: {fileID: 1105334766}
+  - component: {fileID: 1105334768}
   m_Layer: 6
   m_Name: pedra (5)
   m_TagString: Untagged
@@ -1597,6 +1771,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1105334768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105334764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1118586178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1798,7 @@ GameObject:
   - component: {fileID: 1118586179}
   - component: {fileID: 1118586181}
   - component: {fileID: 1118586180}
+  - component: {fileID: 1118586182}
   m_Layer: 6
   m_Name: pedra (19)
   m_TagString: Untagged
@@ -1735,6 +1926,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1118586182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118586178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1153441561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,6 +1953,7 @@ GameObject:
   - component: {fileID: 1153441562}
   - component: {fileID: 1153441564}
   - component: {fileID: 1153441563}
+  - component: {fileID: 1153441565}
   m_Layer: 6
   m_Name: pedra (18)
   m_TagString: Untagged
@@ -1873,6 +2081,136 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1153441565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153441561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!1001 &1244636747
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.386319
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.599791
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+--- !u!1001 &1281804941
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.22519732
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.3804035
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &1356864543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1924,6 +2262,120 @@ Transform:
   - {fileID: 1578810980}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1365367955
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.6111774
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.4345665
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+--- !u!1001 &1427338704
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.270927
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.658054
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &1443210397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1935,6 +2387,7 @@ GameObject:
   - component: {fileID: 1443210398}
   - component: {fileID: 1443210400}
   - component: {fileID: 1443210399}
+  - component: {fileID: 1443210401}
   m_Layer: 6
   m_Name: pedra (13)
   m_TagString: Untagged
@@ -2062,6 +2515,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1443210401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443210397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1562640623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,6 +2542,7 @@ GameObject:
   - component: {fileID: 1562640624}
   - component: {fileID: 1562640626}
   - component: {fileID: 1562640625}
+  - component: {fileID: 1562640627}
   m_Layer: 6
   m_Name: pedra (4)
   m_TagString: Untagged
@@ -2200,6 +2670,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1562640627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562640623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1578810979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,6 +2697,7 @@ GameObject:
   - component: {fileID: 1578810980}
   - component: {fileID: 1578810982}
   - component: {fileID: 1578810981}
+  - component: {fileID: 1578810983}
   m_Layer: 6
   m_Name: pedra (10)
   m_TagString: Untagged
@@ -2338,6 +2825,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1578810983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578810979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1628787007
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,6 +2852,7 @@ GameObject:
   - component: {fileID: 1628787008}
   - component: {fileID: 1628787010}
   - component: {fileID: 1628787009}
+  - component: {fileID: 1628787011}
   m_Layer: 6
   m_Name: pedra (7)
   m_TagString: Untagged
@@ -2476,6 +2980,79 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1628787011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628787007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!1001 &1647938759
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.768878
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.989412
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &1730710571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,6 +3064,7 @@ GameObject:
   - component: {fileID: 1730710572}
   - component: {fileID: 1730710574}
   - component: {fileID: 1730710573}
+  - component: {fileID: 1730710575}
   m_Layer: 6
   m_Name: pedra (15)
   m_TagString: Untagged
@@ -2614,6 +3192,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1730710575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730710571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1748529370
 GameObject:
   m_ObjectHideFlags: 0
@@ -2625,6 +3219,7 @@ GameObject:
   - component: {fileID: 1748529371}
   - component: {fileID: 1748529373}
   - component: {fileID: 1748529372}
+  - component: {fileID: 1748529374}
   m_Layer: 6
   m_Name: pedra (9)
   m_TagString: Untagged
@@ -2752,6 +3347,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1748529374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748529370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1755464228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2763,6 +3374,7 @@ GameObject:
   - component: {fileID: 1755464229}
   - component: {fileID: 1755464231}
   - component: {fileID: 1755464230}
+  - component: {fileID: 1755464232}
   m_Layer: 6
   m_Name: pedra (16)
   m_TagString: Untagged
@@ -2890,6 +3502,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1755464232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755464228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1756766795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1784837881984450121, guid: a8b3ddbc67f619e4fbf3602c29d547e1, type: 3}
@@ -2906,6 +3534,7 @@ GameObject:
   - component: {fileID: 1786188505}
   - component: {fileID: 1786188507}
   - component: {fileID: 1786188506}
+  - component: {fileID: 1786188508}
   m_Layer: 6
   m_Name: pedra (6)
   m_TagString: Untagged
@@ -3033,6 +3662,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1786188508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786188504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1860563155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3064,6 +3709,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 644998933}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1910432297
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.105936
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -14.2115345
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &1951422918
 GameObject:
   m_ObjectHideFlags: 0
@@ -3075,6 +3777,7 @@ GameObject:
   - component: {fileID: 1951422919}
   - component: {fileID: 1951422921}
   - component: {fileID: 1951422920}
+  - component: {fileID: 1951422922}
   m_Layer: 6
   m_Name: pedra (1)
   m_TagString: Untagged
@@ -3202,6 +3905,22 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1951422922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951422918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2043693106
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,6 +3931,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2043693108}
   - component: {fileID: 2043693107}
+  - component: {fileID: 2043693109}
+  - component: {fileID: 2043693110}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -3293,6 +4014,125 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2043693109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043693106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!61 &2043693110
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043693106}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.19038887}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 0.6192223}
+  m_EdgeRadius: 0
+--- !u!1001 &2048368576
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_Name
+      value: Epinephelus itajara (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.718593
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.324873
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382666492939591472, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
 --- !u!1 &2136669253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3461,11 +4301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6349982443802233071, guid: a8b3ddbc67f619e4fbf3602c29d547e1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.08
+      value: 4.29
       objectReference: {fileID: 0}
     - target: {fileID: 6349982443802233071, guid: a8b3ddbc67f619e4fbf3602c29d547e1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.17
+      value: -0.73
       objectReference: {fileID: 0}
     - target: {fileID: 6349982443802233071, guid: a8b3ddbc67f619e4fbf3602c29d547e1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3514,3 +4354,12 @@ SceneRoots:
   - {fileID: 4307012678180897955}
   - {fileID: 970024150}
   - {fileID: 644998933}
+  - {fileID: 32074081}
+  - {fileID: 1647938759}
+  - {fileID: 1427338704}
+  - {fileID: 180987230}
+  - {fileID: 1281804941}
+  - {fileID: 1244636747}
+  - {fileID: 1365367955}
+  - {fileID: 2048368576}
+  - {fileID: 1910432297}
