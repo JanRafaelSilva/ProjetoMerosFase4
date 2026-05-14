@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1387531296686886009}
   - component: {fileID: 7880210427700931148}
   - component: {fileID: 2315960869670609074}
-  - component: {fileID: 5167922293435545384}
   m_Layer: 0
   m_Name: Meros
   m_TagString: Player
@@ -154,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d905b8fbc64daa4a9b26ce6cccd721b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePlayer
+  direction: {x: 0, y: 0}
   speed: 1
   rotacaoMax: 20
   smoothTime: 2
@@ -243,6 +243,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ab3f3d2d-2d9e-43d5-893c-8ecf811cc6ae
+    m_ActionName: 'Player/Fuga[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: 
@@ -275,15 +279,3 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &5167922293435545384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784837881984450121}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 315fc68bd78ff314e9ab6dc18da08ce4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Pescado

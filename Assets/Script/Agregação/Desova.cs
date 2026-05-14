@@ -19,6 +19,10 @@ public class Desova : MonoBehaviour
     public float circle;
     Rigidbody2D rb;
 
+    public void Allow()
+    {
+        // Futuro
+    }
     public void Awake()
     {
         move = GetComponent<Meros>();

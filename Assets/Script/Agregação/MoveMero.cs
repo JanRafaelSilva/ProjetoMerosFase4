@@ -121,18 +121,3 @@ public class MoveMero : MonoBehaviour
 
     }
 }
-// utilizar autoBraking: Should the agent brake automatically to avoid overshooting the destination point?
-// pós autoRepath: Should the agent attempt to acquire a new path if the existing path becomes invalid?
-// talvez usar avoidancePriority: The avoidance priority level.
-
-
-//agent.velocity = rb.linearVelocity;
-        //rb.AddForce(direction * agent.speed);
-        //rb.linearVelocity = new Vector2(Mathf.Clamp(rb.linearVelocity.x, moveMin, moveMax),Mathf.Clamp(rb.linearVelocity.y, moveMin, move
-        //	Maximum turning speed in (deg/s) while following a path.
-      //  agent.angularSpeed = direction.y * rotacaoMax;
-      //	The maximum acceleration of an agent as it follows a path, given in units / sec^2.
-
-      //NavMesh.FindClosestEdge
-
-      //Inicio o projeto em junho
