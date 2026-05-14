@@ -43,16 +43,17 @@ public class MoveMero : MonoBehaviour
     }
     private void Update()
     {
-
+        HandleFlip();
         timeRandom -= Time.deltaTime;
         if(timeRandom <= 0f)
         {
             DirectionRandom();
         }
-        if(agent.velocity.magnitude < 0.15f && EndMap)
+        if (agent.velocity.magnitude < 0.15f && EndMap)
         {
            direction *= -1;
-           EndMap = false;
+           transform.localScale = new Vector3(transform.localScale.x * -1, 1, 1);
+            EndMap = false;
         }
         else
         {
@@ -67,7 +68,6 @@ public class MoveMero : MonoBehaviour
     private void FixedUpdate()
     {
         Movimento();
-
     }
     public void DirectionRandom()
     {
@@ -76,16 +76,49 @@ public class MoveMero : MonoBehaviour
         direction.y = Random.Range(moveMinY, moveMaxY);
         if (direction.x > 0f) 
         {
-            transform.localScale = new Vector3(1, 1, 1);
+           // transform.localScale = new Vector3(1, 1, 1);
         }
         else if (direction.x < 0f)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            //transform.localScale = new Vector3(-1, 1, 1);
         }
     }
     public void Movimento()
     {
         agent.SetDestination(new Vector3(transform.position.x + direction.x, transform.position.y + direction.y, 0f));
+        
+        float anguloAlvo = direction.y * rotacaoMax;
+
+        if (transform.localScale.x < 0) anguloAlvo = -anguloAlvo;
+
+        float zAtual = transform.eulerAngles.z;
+        if (zAtual > 180) zAtual -= 360;
+
+        float zNovo = Mathf.SmoothDampAngle(zAtual, anguloAlvo, ref velRotacao, smoothTime);
+        transform.rotation = Quaternion.Euler(0, 0, zNovo);
+    }
+    void HandleFlip()
+    {
+        float escalaAntiga = transform.localScale.x;
+        if (direction.x > 0.1f)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (direction.x < -0.1f)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        if (transform.localScale.x != escalaAntiga)
+        {
+            Vector3 rot = transform.eulerAngles;
+            float z = rot.z;
+            if (z > 180) z -= 360;
+
+            transform.rotation = Quaternion.Euler(0, 0, -z);
+
+            velRotacao = 0;
+        }
+
     }
 }
 // utilizar autoBraking: Should the agent brake automatically to avoid overshooting the destination point?

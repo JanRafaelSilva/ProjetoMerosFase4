@@ -211,9 +211,11 @@ MonoBehaviour:
   moveMin: -2
   stop: 0
   acceleration: 2
+  EndMap: 0
   timeRandom: 0
-  timeMin: 3
-  timeMax: 10
+  timeMin: 10
+  timeMax: 25
+  EndMapTime: 0
   moveMin_X: 1
   moveMax_X: -1
   moveMinY: -0.5
