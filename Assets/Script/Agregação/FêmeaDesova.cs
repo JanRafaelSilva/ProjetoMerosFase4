@@ -15,6 +15,14 @@ public class FêmeaDesova : MonoBehaviour
     {
         //Permissão para desovar
         Allow = Random.value < 0.5f;
+        if (Allow == false)
+        {
+            RandomTime();
+        }
+    }
+    private void Start()
+    {
+        RandomTime();
     }
     void Update()
     {

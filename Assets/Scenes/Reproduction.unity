@@ -1849,8 +1849,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 970024152}
   m_SourcePrefab: {fileID: 100100000, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+--- !u!1 &970024151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 301803673352401789, guid: 1297d60364e023949936b2b5de014e71, type: 3}
+  m_PrefabInstance: {fileID: 970024150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &970024152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970024151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b0e49fe77b69449a658a52d72f6785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::Colora\xE7\xE3o"
+  genero: 0
+  confirmed: {fileID: 0}
+  sprites:
+  - cor: Light
+    sprite: {fileID: 0}
+  - cor: Normal
+    sprite: {fileID: 0}
+  - cor: Dark
+    sprite: {fileID: 0}
+  - cor: Bicolor
+    sprite: {fileID: 0}
 --- !u!1001 &989065269
 PrefabInstance:
   m_ObjectHideFlags: 0

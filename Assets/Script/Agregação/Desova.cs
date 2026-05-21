@@ -7,7 +7,28 @@ using UnityEngine.InputSystem;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 public class Desova : MonoBehaviour
 {
-    public float Espera, TDesova, Tmax,Tmin;
+    public bool allow;
+    public void Allow()
+    {
+        allow = true;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*public float Espera, TDesova, Tmax,Tmin;
     public float radius;
     public bool timePronto, AreaLimpa, Area, PermiDesova;
     public LayerMask mask;
@@ -19,10 +40,6 @@ public class Desova : MonoBehaviour
     public float circle;
     Rigidbody2D rb;
 
-    public void Allow()
-    {
-        // Futuro
-    }
     public void Awake()
     {
         move = GetComponent<Meros>();
@@ -84,5 +101,4 @@ public class Desova : MonoBehaviour
                 Gizmos.DrawWireSphere(new Vector2(transform.position.x, transform.position.y + circle), radius);
             }
         }
-    }
-    }
+    }*/
