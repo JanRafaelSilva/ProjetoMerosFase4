@@ -26,12 +26,11 @@ public class Coloração : MonoBehaviour
 
     private void Start()
     {
-        mySprite = genero == Genero.Femea ? sprites[0].sprite : sprites[2].sprite;
+        mySprite = genero == Genero.Femea ? sprites[0].sprite : sprites[1].sprite;
         confirmed.enabled = genero == Genero.Femea ? true : false;
     }
 
 }
-//https://grouperluna.com/tag/goliath/
 /*ele vão ter o gênero já definido
 as fêmeas vão ter um coloração diferente
 daí vai ser avaliado se ele é fêmea ou macho

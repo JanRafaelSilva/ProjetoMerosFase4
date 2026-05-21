@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 2756326467677376989}
   - component: {fileID: 2230380220753013471}
   - component: {fileID: 7256449574098562033}
+  - component: {fileID: 5354484630642450974}
+  - component: {fileID: 7356614683133810380}
+  - component: {fileID: 8427670153431952968}
   m_Layer: 0
   m_Name: Epinephelus itajara
   m_TagString: Untagged
@@ -220,3 +223,64 @@ MonoBehaviour:
   moveMax_X: -1
   moveMinY: -0.5
   moveMaxY: 0.5
+--- !u!114 &5354484630642450974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301803673352401789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b0e49fe77b69449a658a52d72f6785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::Colora\xE7\xE3o"
+  genero: 1
+  confirmed: {fileID: 0}
+  sprites:
+  - cor: Light
+    sprite: {fileID: 21300000, guid: 9a0cdef2cdc3d384cae8b9ed8e7e7f0a, type: 3}
+  - cor: Normal
+    sprite: {fileID: 21300000, guid: 9a0cdef2cdc3d384cae8b9ed8e7e7f0a, type: 3}
+  - cor: Dark
+    sprite: {fileID: 21300000, guid: 9a0cdef2cdc3d384cae8b9ed8e7e7f0a, type: 3}
+  - cor: Bicolor
+    sprite: {fileID: 21300000, guid: 9a0cdef2cdc3d384cae8b9ed8e7e7f0a, type: 3}
+--- !u!114 &7356614683133810380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301803673352401789}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41e64cc5cba79d45a34502aae1cc6db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::F\xEAmeaDesova"
+  RandomTimeDesova: 0
+  max: 0
+  min: 0
+  Allow: 0
+  AgentMove: {fileID: 7256449574098562033}
+  reproduction: {fileID: 8427670153431952968}
+--- !u!114 &8427670153431952968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301803673352401789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62531734711215b4fa967f2d142a7a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveDesova
+  reproduction: 0
+  radius: 0
+  mask:
+    serializedVersion: 2
+    m_Bits: 256
+  spawning: 0
+  destinationY: {fileID: 0}
+  nav: {fileID: 0}

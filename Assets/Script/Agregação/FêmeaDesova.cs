@@ -1,11 +1,15 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class FêmeaDesova : MonoBehaviour
 {
     public float RandomTimeDesova, max, min;
     public bool Allow;
-    [SerializeField] private Desova reproduction;
+    public MoveMero AgentMove;
+    public FêmeaDesova control;
+    [SerializeField] private MoveDesova reproduction;
+
     public void RandomTime()
     {
         //Intervalo entre Desovas
@@ -36,7 +40,10 @@ public class FêmeaDesova : MonoBehaviour
         }
         if (Allow)
         {
-            reproduction.Allow();
+            reproduction.Allow(Allow);
+            AgentMove.enabled = false;
+            control.enabled = false;
+
         }
     }
 }
