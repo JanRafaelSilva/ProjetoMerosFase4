@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [ RequireComponent (typeof( NavMeshAgent ))]
-public class MoveMero : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     public Vector2 direction;
     private Rigidbody2D rb;
@@ -22,66 +22,49 @@ public class MoveMero : MonoBehaviour
     public float timeRandom, timeMin, timeMax;
     public float EndMapTime;
     public float moveMin_X,moveMax_X,moveMinY, moveMaxY;
-    //Ponto para o qual o personagem irá se mover
-    //Variável NavMeshAgent Para configurar A movimentação do personagem
     private NavMeshAgent agent;
 
     void Awake()
     {
          rb = GetComponent<Rigidbody2D>();
-        //Pega o Componente NavMeshAgent
         agent = GetComponent<NavMeshAgent>();
     }
     void Start()
     {
-        DirectionRandom();
-        //Variaveis setadas como False para Não utilizar os eixos Y Baseado em 3 dimensões
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         agent.acceleration = acceleration;
         agent.speed = speed;
     }
-    private void Update()
+    public void Control()
     {
         HandleFlip();
         timeRandom -= Time.deltaTime;
-        if(timeRandom <= 0f)
+        if (timeRandom <= 0f)
         {
             DirectionRandom();
         }
         if (agent.velocity.magnitude < 0.15f && EndMap)
         {
-           direction *= -1;
-           transform.localScale = new Vector3(transform.localScale.x * -1, 1, 1);
+            direction *= -1;
+            transform.localScale = new Vector3(transform.localScale.x * -1, 1, 1);
             EndMap = false;
         }
         else
         {
             EndMapTime += Time.deltaTime;
-            if(EndMapTime >= 4f)
+            if (EndMapTime >= 4f)
             {
                 EndMap = true;
                 EndMapTime = 0f;
             }
         }
-    } 
-    private void FixedUpdate()
-    {
-        Movimento();
     }
     public void DirectionRandom()
     {
         timeRandom = Random.Range(timeMin, timeMax);
         direction.x = Random.Range(moveMin_X, moveMax_X);
         direction.y = Random.Range(moveMinY, moveMaxY);
-        if (direction.x > 0f) 
-        {
-           // transform.localScale = new Vector3(1, 1, 1);
-        }
-        else if (direction.x < 0f)
-        {
-            //transform.localScale = new Vector3(-1, 1, 1);
-        }
     }
     public void Movimento()
     {

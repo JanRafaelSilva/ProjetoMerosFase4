@@ -2,13 +2,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class FêmeaDesova : MonoBehaviour
+public class SpawningCall : MonoBehaviour
 {
     public float RandomTimeDesova, max, min;
     public bool Allow;
-    public MoveMero AgentMove;
-    public FêmeaDesova control;
-    [SerializeField] private MoveDesova reproduction;
 
     public void RandomTime()
     {
@@ -24,26 +21,15 @@ public class FêmeaDesova : MonoBehaviour
             RandomTime();
         }
     }
-    private void Start()
+    public void Control()
     {
-        RandomTime();
-    }
-    void Update()
-    {
-        if(RandomTimeDesova >= 0)
+        if (RandomTimeDesova >= 0)
         {
             RandomTimeDesova -= Time.deltaTime;
-        } 
+        }
         else
         {
             RandomDesova();
-        }
-        if (Allow)
-        {
-            reproduction.Allow(Allow);
-            AgentMove.enabled = false;
-            control.enabled = false;
-
         }
     }
 }
