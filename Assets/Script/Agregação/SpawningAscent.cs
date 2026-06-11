@@ -3,6 +3,7 @@ using UnityEngine.Rendering;
 using static UnityEngine.GraphicsBuffer;
 using UnityEngine.AI;
 using System;
+using System.Transactions;
 
 public class SpawningAscent : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class SpawningAscent : MonoBehaviour
 
     public float direction;
     public float _time;
+    public float timeZZ;
+    public GameObject test;
     void Awake()
     {
         nav = GetComponent<NavMeshAgent>();
@@ -50,9 +53,15 @@ public class SpawningAscent : MonoBehaviour
     }
     void ZigzagMovement()
     {
+        timeZZ += Time.deltaTime;
+        if(timeZZ > 2f) 
+        {
+             _amplitude += 0.30f;
+             timeZZ = 0;
+        }
         pos += Vector3.up * Time.deltaTime * speed;
         direction = Mathf.Sin(Time.time * _frequency);
-        transform.position = pos + axis * direction * _amplitude;
+        transform.position.x = axis * direction * _amplitude;
     }
     public void Control()
     {
@@ -87,10 +96,12 @@ public class SpawningAscent : MonoBehaviour
         if (direction <= -0.9f)
         {
             transform.localScale = Vector3.MoveTowards(transform.localScale, new Vector3(1,1,1), _time);
+            Instantiate(test, transform.position, Quaternion.identity);
         }
         else if (direction >= 0.9f)
         {
             transform.localScale = Vector3.MoveTowards(transform.localScale, new Vector3(-1, 1, 1), _time);
+            Instantiate(test, transform.position, Quaternion.identity);
         }
     }
 }

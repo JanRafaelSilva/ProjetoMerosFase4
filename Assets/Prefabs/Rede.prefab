@@ -112,11 +112,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rede
   Player: {fileID: 4808798363118506791, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
-  rot: 0
   timer: 0
   velocityX: 0
   velocityY: 0
   time: 0
+  timerD: 0
 --- !u!212 &9116352561009439493
 SpriteRenderer:
   serializedVersion: 2
@@ -167,7 +167,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: f296ce2699894a746b3fccb77dd2062f, type: 3}
-  m_Color: {r: 0.5245282, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -189,5 +189,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Water
   move: {fileID: 0}
-  moveMin: -5
-  moveMax: 5
+  moveMin: -3
+  moveMax: 3
