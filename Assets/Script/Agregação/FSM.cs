@@ -11,6 +11,8 @@ public class FSM : MonoBehaviour
     [SerializeField] private SpawningAscent spawningAscent;
     [SerializeField] private SpawningCall spawningCall;
     [SerializeField] private Spawning spawing;
+
+    bool random = true;
     //Estados
     private void Awake()
     {
@@ -35,13 +37,17 @@ public class FSM : MonoBehaviour
             case MeroEstados.Movement:
 
                 movement.Control();
-                if (sex.genero == Sex.Genero.Femea) spawningCall.RandomTime();
-            
+                if (sex.genero == Sex.Genero.Femea)
+                {
+                    spawningCall.Control();
+                    if (spawningCall.Allow == true) SetEstados(MeroEstados.SpawningAscent);
+                }
                 break;
 
             case MeroEstados.SpawningAscent:
 
                 spawningAscent.Control();
+
                 break;
 
             case MeroEstados.Spawning:
@@ -61,3 +67,6 @@ public class FSM : MonoBehaviour
         EstadoAtual = novoEstado;
     }
 }
+//1: a fêmea entra no momento reprodutivo - spawningCall
+//2: ela libera um sinal aos outros machos e se movimenta ao topo - SpawningAscent
+//3: em um Quick time Event ele terminara a reprodução - Spawning
