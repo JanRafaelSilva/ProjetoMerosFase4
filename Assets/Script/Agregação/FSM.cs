@@ -11,6 +11,7 @@ public class FSM : MonoBehaviour
     [SerializeField] private SpawningAscent spawningAscent;
     [SerializeField] private SpawningCall spawningCall;
     [SerializeField] private Spawning spawing;
+    [SerializeField] private DrawLines drawlines;
 
     bool random = true;
     //Estados
@@ -47,6 +48,7 @@ public class FSM : MonoBehaviour
             case MeroEstados.SpawningAscent:
 
                 spawningAscent.Control();
+                drawlines.Control();
 
                 break;
 

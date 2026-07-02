@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111729084cd24e1498625ba31e4ba818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveBoat
-  speed: 0.5
+  speed: 2.5
 --- !u!1 &7745892260241632533
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,6 +302,7 @@ GameObject:
   - component: {fileID: 1193673183011360429}
   - component: {fileID: 4542057831245269728}
   - component: {fileID: 5375844006163632764}
+  - component: {fileID: 6885567354860296205}
   m_Layer: 0
   m_Name: Square
   m_TagString: Barco
@@ -318,7 +319,7 @@ Transform:
   m_GameObject: {fileID: 7745892260241632533}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1317, y: 0.95, z: 0}
+  m_LocalPosition: {x: -0.122, y: 0.92, z: 0}
   m_LocalScale: {x: 0.43596256, y: -0.88339156, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -436,13 +437,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7745892260241632533}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e57ea4d5af8a3f44fa6f618c4d90460f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BarcoRede
   Player: {fileID: 0}
   Rede: {fileID: 4364705169758262398, guid: 2a9ad5041cc371f448924be6458b9993, type: 3}
-  distance: 20
-  found: 0
-  redeTime: 3
+  timer: 0
+  redeTime: 8
+--- !u!114 &6885567354860296205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7745892260241632533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c1415f5c93e4845b8e1e0545755ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoatAnzol
+  timer: 0
+  timerMax: 5
+  harpoon: {fileID: 398549268990309973, guid: b35baeb5ec60ad14a92823620f8051bf, type: 3}
+  Mero: {fileID: 0}

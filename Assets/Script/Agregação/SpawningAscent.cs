@@ -28,20 +28,19 @@ public class SpawningAscent : MonoBehaviour
     public float _frequency = 1.0f;
     public float _amplitude = 5.0f;
 
-    private Vector3 pos;
+    public Vector2 pos;
     private Vector3 axis;
 
     public float direction;
     public float _time;
+    public float timeIntervalo;
     public float timeZZ;
-    public GameObject test;
     void Awake()
     {
         nav = GetComponent<NavMeshAgent>();
     }
     private void Start()
     {
-        pos = transform.position;
         axis = transform.right;
     }
     private void OnDrawGizmos()
@@ -53,15 +52,21 @@ public class SpawningAscent : MonoBehaviour
     }
     void ZigzagMovement()
     {
+        timeIntervalo += Time.deltaTime;
         timeZZ += Time.deltaTime;
-        if(timeZZ > 2f) 
+        if(timeIntervalo > 2f) 
         {
              _amplitude += 0.30f;
-             timeZZ = 0;
+             timeIntervalo = 0;
         }
-        pos += Vector3.up * Time.deltaTime * speed;
-        direction = Mathf.Sin(Time.time * _frequency);
-        transform.position.x = axis * direction * _amplitude;
+        Vector2 mov = pos + Vector2.up * (timeZZ * speed);
+        direction = Mathf.Sin(timeZZ * _frequency);
+        mov += (Vector2)axis.normalized * direction * _amplitude;
+        transform.position = mov;
+    
+
+
+
     }
     public void Control()
     {
@@ -69,6 +74,7 @@ public class SpawningAscent : MonoBehaviour
         {
             //sinal aos machos
             Physics.OverlapSphere(transform.position, radius, mask);
+            pos = transform.position;
             spawning = false;
         }
         if (transform.position.y <= destinationY.position.y)
@@ -77,10 +83,10 @@ public class SpawningAscent : MonoBehaviour
           // transform.Translate(Vector3.up * Time.deltaTime * speed, Space.World);
                 nav.enabled = false;
             //float atualZ =  transform.eulerAngles.z;
-           // rot = Mathf.SmoothDampAngle(atualZ, 60f * transform.localScale.x, ref velRotacao, smoothTime);
-           // transform.rotation = Quaternion.Euler(0, 0,rot); 
+            // rot = Mathf.SmoothDampAngle(atualZ, 60f * transform.localScale.x, ref velRotacao, smoothTime);
+            // transform.rotation = Quaternion.Euler(0, 0,rot); 
             ZigzagMovement();
-            Flip();
+         //   Flip();
         }
         else
         {
@@ -93,15 +99,13 @@ public class SpawningAscent : MonoBehaviour
     }
     void Flip()
     {
-        if (direction <= -0.9f)
+        if (direction <= -0.99f)
         {
             transform.localScale = Vector3.MoveTowards(transform.localScale, new Vector3(1,1,1), _time);
-            Instantiate(test, transform.position, Quaternion.identity);
         }
-        else if (direction >= 0.9f)
+        else if (direction >= 0.99f)
         {
             transform.localScale = Vector3.MoveTowards(transform.localScale, new Vector3(-1, 1, 1), _time);
-            Instantiate(test, transform.position, Quaternion.identity);
         }
     }
 }
