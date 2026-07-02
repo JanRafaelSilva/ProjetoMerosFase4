@@ -69,6 +69,6 @@ public class FSM : MonoBehaviour
         EstadoAtual = novoEstado;
     }
 }
-//1: a fêmea entra no momento reprodutivo - spawningCall
+//1: a fï¿½mea entra no momento reprodutivo - spawningCall
 //2: ela libera um sinal aos outros machos e se movimenta ao topo - SpawningAscent
-//3: em um Quick time Event ele terminara a reprodução - Spawning
+//3: em um Quick time Event ele terminara a reproduï¿½ï¿½o - Spawning

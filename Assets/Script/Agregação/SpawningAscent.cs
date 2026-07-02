@@ -59,13 +59,11 @@ public class SpawningAscent : MonoBehaviour
              _amplitude += 0.30f;
              timeIntervalo = 0;
         }
-        Vector2 mov = pos + Vector2.up * (timeZZ * speed);
+        //Vector2 mov = pos + Vector2.up * (timeZZ * speed);
         direction = Mathf.Sin(timeZZ * _frequency);
-        mov += (Vector2)axis.normalized * direction * _amplitude;
-        transform.position = mov;
-    
-
-
+       // mov += (Vector2)axis.normalized * direction * _amplitude;
+       // transform.position = mov;
+        transform.position = (Vector2)axis.normalized * direction * _amplitude;
 
     }
     public void Control()

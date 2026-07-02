@@ -1163,7 +1163,7 @@ LineRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
@@ -1188,7 +1188,7 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0.2759156, b: 0.6226415, a: 1}
+      key0: {r: 1, g: 0, b: 0.019583702, a: 1}
       key1: {r: 0, g: 0.55724955, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -2817,6 +2817,7 @@ MonoBehaviour:
   player: {fileID: 1756766795}
   velocity: {x: 0, y: 0, z: 0}
   smoothTime: 0.2
+  posiY: 0
   Y: 1
 --- !u!114 &2136669258
 MonoBehaviour:
