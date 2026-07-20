@@ -4,6 +4,7 @@ using static UnityEngine.GraphicsBuffer;
 using UnityEngine.AI;
 using System;
 using System.Transactions;
+using System.Collections;
 
 public class SpawningAscent : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class SpawningAscent : MonoBehaviour
     public float speed;
     //Zigzag
     public float _frequency = 1.0f;
-    public float _amplitude = 5.0f;
+    public float _amplitude, gainAmplitude;
 
     public Vector2 pos;
     private Vector3 axis;
@@ -52,18 +53,12 @@ public class SpawningAscent : MonoBehaviour
     }
     void ZigzagMovement()
     {
-        timeIntervalo += Time.deltaTime;
         timeZZ += Time.deltaTime;
-        if(timeIntervalo > 2f) 
-        {
-             _amplitude += 0.30f;
-             timeIntervalo = 0;
-        }
-        //Vector2 mov = pos + Vector2.up * (timeZZ * speed);
+        StartCoroutine(AddAmplitude());
+        Vector2 mov = pos + Vector2.up * (timeZZ * speed);
         direction = Mathf.Sin(timeZZ * _frequency);
-       // mov += (Vector2)axis.normalized * direction * _amplitude;
-       // transform.position = mov;
-        transform.position = (Vector2)axis.normalized * direction * _amplitude;
+        mov += (Vector2)axis.normalized * direction * _amplitude;
+        transform.position = mov;
 
     }
     public void Control()
@@ -84,7 +79,7 @@ public class SpawningAscent : MonoBehaviour
             // rot = Mathf.SmoothDampAngle(atualZ, 60f * transform.localScale.x, ref velRotacao, smoothTime);
             // transform.rotation = Quaternion.Euler(0, 0,rot); 
             ZigzagMovement();
-         //   Flip();
+            Flip();
         }
         else
         {
@@ -105,6 +100,11 @@ public class SpawningAscent : MonoBehaviour
         {
             transform.localScale = Vector3.MoveTowards(transform.localScale, new Vector3(-1, 1, 1), _time);
         }
+    }
+    IEnumerator AddAmplitude()
+    {
+        yield return new WaitForSeconds(0.5f);
+        _amplitude += gainAmplitude;
     }
 }
 
