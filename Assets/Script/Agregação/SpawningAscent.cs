@@ -5,6 +5,8 @@ using UnityEngine.AI;
 using System;
 using System.Transactions;
 using System.Collections;
+using Unity.VisualScripting;
+using UnityEditor;
 
 public class SpawningAscent : MonoBehaviour
 {
@@ -36,54 +38,40 @@ public class SpawningAscent : MonoBehaviour
     public float _time;
     public float timeIntervalo;
     public float timeZZ;
+    public float strenght;
+    private TrailRenderer line;
+
+    public Color circleColor = Color.yellow;
+
     void Awake()
     {
         nav = GetComponent<NavMeshAgent>();
+        line = GetComponent<TrailRenderer>();
     }
     private void Start()
     {
         axis = transform.right;
     }
-    private void OnDrawGizmos()
-    {
-        if(spawning){
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(transform.position, radius);
-        }
-    }
-    void ZigzagMovement()
-    {
-        timeZZ += Time.deltaTime;
-        StartCoroutine(AddAmplitude());
-        Vector2 mov = pos + Vector2.up * (timeZZ * speed);
-        direction = Mathf.Sin(timeZZ * _frequency);
-        mov += (Vector2)axis.normalized * direction * _amplitude;
-        transform.position = mov;
-
-    }
     public void Control()
     {
+        Flip();
         if (spawning)
         {
-            //sinal aos machos
-            Physics.OverlapSphere(transform.position, radius, mask);
-            pos = transform.position;
             spawning = false;
         }
         if (transform.position.y <= destinationY.position.y)
         {
             //movimento
-          // transform.Translate(Vector3.up * Time.deltaTime * speed, Space.World);
-                nav.enabled = false;
-            //float atualZ =  transform.eulerAngles.z;
-            // rot = Mathf.SmoothDampAngle(atualZ, 60f * transform.localScale.x, ref velRotacao, smoothTime);
-            // transform.rotation = Quaternion.Euler(0, 0,rot); 
-            ZigzagMovement();
-            Flip();
+            nav.enabled = false;
+
+                ZigzagMovement();
+                SphereHelp();
+                DrawLine(true);
         }
         else
         {
             //parada
+            DrawLine(false);
             spawning = false;
             float atualZ = transform.eulerAngles.z;
             rot = Mathf.SmoothDampAngle(atualZ, 0 * transform.localScale.x, ref velRotacao, smoothTime);
@@ -105,6 +93,30 @@ public class SpawningAscent : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         _amplitude += gainAmplitude;
+    }
+    void ZigzagMovement()
+    {
+        timeZZ += Time.deltaTime;
+        StartCoroutine(AddAmplitude());
+        Vector2 mov = pos + Vector2.up * (timeZZ * speed);
+        direction = Mathf.Sin(timeZZ * _frequency);
+        mov += (Vector2)axis.normalized * direction * _amplitude;
+        transform.position = mov;
+    }
+    void SphereHelp()
+    {
+        Collider2D collider = Physics2D.OverlapCircle(transform.position, radius, mask);
+        Vector3 direction = transform.position - collider.gameObject.transform.position;
+        collider.GetComponent<Rigidbody2D>().AddForceAtPosition(direction.normalized * strenght, transform.position, ForceMode2D.Force);
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Handles.color = circleColor;
+        Handles.DrawWireDisc(transform.position, Vector3.forward, radius);
+    }
+    void DrawLine(bool draw)
+    {
+        line.enabled = draw;
     }
 }
 

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 382666492939591472}
   - component: {fileID: 6802882968600259247}
-  - component: {fileID: 2360478402061852796}
   - component: {fileID: 2756326467677376989}
   - component: {fileID: 2230380220753013471}
   - component: {fileID: 7256449574098562033}
@@ -98,33 +97,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!50 &2360478402061852796
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301803673352401789}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 64
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!61 &2756326467677376989
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -262,8 +234,7 @@ MonoBehaviour:
   max: 0
   min: 0
   Allow: 0
-  AgentMove: {fileID: 7256449574098562033}
-  reproduction: {fileID: 8427670153431952968}
+  startRandom: 0
 --- !u!114 &8427670153431952968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,3 +255,19 @@ MonoBehaviour:
   spawning: 0
   destinationY: {fileID: 0}
   nav: {fileID: 0}
+  rot: 0
+  smoothTime: 0
+  speed: 0
+  _frequency: 1
+  _amplitude: 0
+  gainAmplitude: 0
+  pos: {x: 0, y: 0}
+  direction: 0
+  _time: 0
+  timeIntervalo: 0
+  timeZZ: 0
+  speed_start: 0
+  startReproducy: {fileID: 0}
+  strenght: 0
+  circleBoom: {fileID: 0}
+  circleColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}

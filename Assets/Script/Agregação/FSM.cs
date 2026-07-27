@@ -11,7 +11,13 @@ public class FSM : MonoBehaviour
     [SerializeField] private SpawningAscent spawningAscent;
     [SerializeField] private SpawningCall spawningCall;
     [SerializeField] private Spawning spawing;
-    [SerializeField] private DrawLines drawlines;
+    [SerializeField] private Transform startReproducy;
+    [SerializeField] private Event eventMateChoice;
+    public float MateChoiceTime;
+    public bool endMateChoice;
+    public bool ready = false;
+    public float speed_start;
+
 
     bool random = true;
     //Estados
@@ -22,7 +28,8 @@ public class FSM : MonoBehaviour
     public enum MeroEstados
     {
         Movement,//vagar
-        SpawningAscent,//subida/decida
+        MateChoice,//seleção sexual
+        SpawningAscent,//subida
         Spawning,// desova
     }
     public MeroEstados EstadoAtual = MeroEstados.Movement;
@@ -41,14 +48,30 @@ public class FSM : MonoBehaviour
                 if (sex.genero == Sex.Genero.Femea)
                 {
                     spawningCall.Control();
-                    if (spawningCall.Allow == true) SetEstados(MeroEstados.SpawningAscent);
+                    if (spawningCall.Allow == true) 
+                    SetEstados(MeroEstados.MateChoice);
                 }
                 break;
+            case MeroEstados.MateChoice:
+                
+                if(!ready){
+                    
+                    float strength = speed_start * Time.deltaTime;
+                    transform.position = Vector3.MoveTowards(transform.position, startReproducy.position, strength);
+                    float distance = Vector3.Distance(transform.position, startReproducy.position);
+                    if (distance < 1f)
+                    ready = true;
+                }
+                else
+                {
+                    eventMateChoice.Control();
+                    if(eventMateChoice.end) SetEstados(MeroEstados.SpawningAscent); 
+                }
 
+                break;
             case MeroEstados.SpawningAscent:
-
+                    
                 spawningAscent.Control();
-                drawlines.Control();
 
                 break;
 
@@ -69,6 +92,3 @@ public class FSM : MonoBehaviour
         EstadoAtual = novoEstado;
     }
 }
-//1: a f�mea entra no momento reprodutivo - spawningCall
-//2: ela libera um sinal aos outros machos e se movimenta ao topo - SpawningAscent
-//3: em um Quick time Event ele terminara a reprodu��o - Spawning

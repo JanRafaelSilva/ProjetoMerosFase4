@@ -604,6 +604,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4808798363118506791, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
   m_PrefabInstance: {fileID: 1361678088}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &426960000 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
+  m_PrefabInstance: {fileID: 1361678088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &426960007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426959999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a7ae471d21f9e44b7075e0cc42a9cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Gravity
+  max: 18
 --- !u!1 &454457149
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c87c238c995a8e468e8907560cc51f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
-  player: {fileID: 426959999}
+  player: {fileID: 426960000}
   velocity: {x: 0, y: 0, z: 0}
   smoothTime: 0.2
   posiY: 5.5
@@ -2040,7 +2058,7 @@ Transform:
   m_GameObject: {fileID: 1242316596}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 75.57483, y: 4.5959296, z: 0}
+  m_LocalPosition: {x: 75.5, y: 4.5959296, z: 0}
   m_LocalScale: {x: 2.2139318, y: 2.868991, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2271,11 +2289,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.2
+      value: 9.9
       objectReference: {fileID: 0}
     - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.2
+      value: -2.9
       objectReference: {fileID: 0}
     - target: {fileID: 173080006811182465, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2313,6 +2331,26 @@ PrefabInstance:
       propertyPath: fishing
       value: 
       objectReference: {fileID: 596396441}
+    - target: {fileID: 3973702749938124578, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3973702749938124578, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionId
+      value: ab3f3d2d-2d9e-43d5-893c-8ecf811cc6ae
+      objectReference: {fileID: 0}
+    - target: {fileID: 3973702749938124578, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionId
+      value: cab19253-7045-4f79-8f68-b987dca606ee
+      objectReference: {fileID: 0}
+    - target: {fileID: 3973702749938124578, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionName
+      value: 'Player/Fuga[/Keyboard/space]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3973702749938124578, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
+      value: 'UI/QuickTimeEvent[/Keyboard/space]'
+      objectReference: {fileID: 0}
     - target: {fileID: 4808798363118506791, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
       propertyPath: m_Name
       value: Merinha
@@ -2320,7 +2358,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4808798363118506791, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 426960007}
   m_SourcePrefab: {fileID: 100100000, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
 --- !u!1 &1365038153
 GameObject:
@@ -2626,7 +2667,7 @@ Transform:
   m_GameObject: {fileID: 1509961465}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 145.7, y: 1.33, z: 3}
+  m_LocalPosition: {x: 145.65, y: 1.33, z: 3}
   m_LocalScale: {x: 2.213932, y: 2.868991, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
