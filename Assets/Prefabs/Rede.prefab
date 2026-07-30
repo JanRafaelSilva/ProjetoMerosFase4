@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Water
   move: {fileID: 0}
-  moveMin: -3
-  moveMax: 3
+  moveMin: -2
+  moveMax: 2
 --- !u!58 &5504164097849818236
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -17,8 +17,9 @@ public class EventFishing : MonoBehaviour
     public float pull = 0.1f;
     public float limitForce = 900f;
     public float limitPull = -900f;
+    public float timeScale;
     [SerializeField] private GameObject EventInterface; 
-    [SerializeField] private Transform imagem;
+    [SerializeField] private  RectTransform imagem;
     GameObject net;
     private void OnEnable()
     {
@@ -39,7 +40,7 @@ public class EventFishing : MonoBehaviour
         zoom.enabled = true;
         eventFished = true;
         follow.QuickTimeEvent(true);
-        Time.timeScale = 0;
+        Time.timeScale = timeScale;
         }
     private void Update()
     {
@@ -52,22 +53,25 @@ public class EventFishing : MonoBehaviour
             input_system.FindActionMap("Player").Disable(); 
                 input_system.FindActionMap("UI").Enable(); 
             zoom.Minigame(true);
-            time += Time.deltaTime;
+            time += Time.unscaledDeltaTime;
             EventInterface.SetActive(true);
             if(time <= timeEscape)
             {
                 if(input.WasCompletedThisFrame())
                 {
-                    imagem.position = new Vector3(imagem.position.x + force, imagem.position.y, imagem.position.z);
-                    if(imagem.position.x >= limitForce)
+                    imagem.localPosition = new Vector3(imagem.localPosition.x + force, imagem.localPosition.y, imagem.localPosition.z);
+                    if(imagem.localPosition.x >= limitForce)
                     {
                         EndEvent();
-                        imagem.position = imagem.position = new Vector3(limitPull, imagem.position.y, imagem.position.z);
                     }
                 }
-                if(imagem.position.x > limitPull)
+                if(imagem.localPosition.x >= limitPull)
                 {
-                    imagem.position = new Vector3(imagem.position.x - pull, imagem.position.y, imagem.position.z);
+                    imagem.localPosition = new Vector3(imagem.localPosition.x - pull, imagem.localPosition.y, imagem.localPosition.z);
+                }
+                else if(imagem.localPosition.x <= limitPull)
+                {
+                    imagem.localPosition = new Vector3(limitPull, imagem.localPosition.y, imagem.localPosition.z);
                 }
 
             }
@@ -81,6 +85,7 @@ public class EventFishing : MonoBehaviour
     {
         input_system.FindActionMap("UI").Disable(); 
                 input_system.FindActionMap("Player").Enable();
+                imagem.localPosition = imagem.localPosition = new Vector3(limitPull, imagem.localPosition.y, imagem.localPosition.z);
                 Destroy(net); 
         EventInterface.SetActive(false);
                 zoom.Minigame(false);

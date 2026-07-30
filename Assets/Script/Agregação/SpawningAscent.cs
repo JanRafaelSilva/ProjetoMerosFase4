@@ -97,7 +97,7 @@ public class SpawningAscent : MonoBehaviour
     void ZigzagMovement()
     {
         timeZZ += Time.deltaTime;
-        StartCoroutine(AddAmplitude());
+        //StartCoroutine(AddAmplitude());
         Vector2 mov = pos + Vector2.up * (timeZZ * speed);
         direction = Mathf.Sin(timeZZ * _frequency);
         mov += (Vector2)axis.normalized * direction * _amplitude;
