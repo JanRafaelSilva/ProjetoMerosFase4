@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class BoatHarpoon : MonoBehaviour
 {
-    public float timer, timerMax;
+    private float timer;
+    public float timerMax;
     private Harpoon arm;
     BoatHarpoon my;
     public GameObject harpoon;
@@ -28,8 +29,8 @@ public class BoatHarpoon : MonoBehaviour
     }
     void ins()
     {
-        Instantiate(arm, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
         arm.PlayerScene(Mero, transform);
+        Instantiate(arm, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
         timer = 0;
     }
 }

@@ -5,6 +5,9 @@ public class BoatFishnet : MonoBehaviour
 {
     public Transform Player;
     public GameObject Rede;
+    public MoveRede moveRede;
+    public GameObject QuickTimeEvent;
+    private Fishnet fishnet;
     public float timer;
     public float redeTime = 3f;
 
@@ -14,15 +17,18 @@ public class BoatFishnet : MonoBehaviour
     maskMero = 7, 
     maskPedra = 6;
     private bool vision;
-
+    void Awake()
+    {
+        fishnet = Rede.GetComponent<Fishnet>();
+    }
     public void RayQuest()
     {
         // 1 == true - número da layer recebe 1.
         bitMero = 1 << maskMero;
         bitPedra = 1 << maskPedra;
         // vision = true - mero na visão, = false - pedra na visão.
-        vision = Physics2D.Raycast (transform.position, Player.transform.position,Vector3.Distance(transform.position, Player.transform.position), bitMero) 
-        || !Physics2D.Raycast (transform.position, Player.transform.position,Vector3.Distance(transform.position, Player.transform.position), bitPedra); 
+        vision = Physics2D.Raycast (transform.position, Player.position,Vector3.Distance(transform.position, Player.position), bitMero) 
+        || !Physics2D.Raycast (transform.position, Player.position,Vector3.Distance(transform.position, Player.position), bitPedra); 
     }
     void FixedUpdate()
     {
@@ -37,6 +43,8 @@ public class BoatFishnet : MonoBehaviour
             if(timer > redeTime)
             {
                 //lançar rede
+                moveRede.transformPlayer(Player);
+                fishnet.net(QuickTimeEvent.GetComponent<EventFishing>());
                 Instantiate(Rede, new Vector2(transform.position.x + 5f, transform.position.y + 2f), Quaternion.identity);
                 timer = 0f;
             }

@@ -20,7 +20,6 @@ public class ZoomCamera : MonoBehaviour
         else
         {
             camera.orthographicSize = Mathf.Lerp(camera.orthographicSize, max, time);
-            this.enabled = false;
         }
     }
     public void Minigame(bool estado)

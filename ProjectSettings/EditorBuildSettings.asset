@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Fase1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/Fase2.unity
+    guid: f4bade2b6c7b8d94097d74201f45532a
+  - enabled: 1
     path: Assets/Scenes/Reproduction.unity
     guid: a65f039b97ac5864ea92c4050bde7360
   m_configObjects:

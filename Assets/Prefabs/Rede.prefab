@@ -9,11 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2788633440959166730}
-  - component: {fileID: 5872352276773979261}
   - component: {fileID: 2170416432105777250}
   - component: {fileID: 9116911693100454174}
   - component: {fileID: 9116352561009439493}
   - component: {fileID: 1862609906448767226}
+  - component: {fileID: 5504164097849818236}
+  - component: {fileID: 7904837570762514395}
   m_Layer: 0
   m_Name: Rede
   m_TagString: Rede
@@ -36,42 +37,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &5872352276773979261
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4364705169758262398}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.0001
 --- !u!50 &2170416432105777250
 Rigidbody2D:
   serializedVersion: 5
@@ -111,10 +76,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca94b83a4776af24789a1dd708803d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rede
-  Player: {fileID: 4808798363118506791, guid: 7f62d9c01f7a57740b16dcce1c2dad92, type: 3}
+  Player: {fileID: 0}
   timer: 0
-  velocityX: 0
-  velocityY: 0
   time: 0
   timerD: 0
 --- !u!212 &9116352561009439493
@@ -164,10 +127,10 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: f296ce2699894a746b3fccb77dd2062f, type: 3}
-  m_Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+  m_Sprite: {fileID: 6283461260650677411, guid: 387275183909156489b503f9cd09bd25, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -191,3 +154,52 @@ MonoBehaviour:
   move: {fileID: 0}
   moveMin: -3
   moveMax: 3
+--- !u!58 &5504164097849818236
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4364705169758262398}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.13321877, y: -0.019032001}
+  m_Radius: 2.2260623
+--- !u!114 &7904837570762514395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4364705169758262398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 307caff5cdc902d41b64f6d3ce45243f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Fishnet
+  net_event: {fileID: 0}

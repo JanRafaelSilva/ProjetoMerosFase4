@@ -6,12 +6,16 @@ public class Harpoon : MonoBehaviour
     public Transform Barco;
     public Transform Mero;
     Vector3 direction;
-    private float speed = 6f;
-    public Rigidbody2D rb;
+    public float speed;
+    Rigidbody2D rb;
     public bool 
     pescou = false,
     puxando = false;
     public float timerD;
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
     
     public void PlayerScene(Transform Mero, Transform Barco)
     {
@@ -23,6 +27,8 @@ public class Harpoon : MonoBehaviour
     {
         // Alvo Mero
         Pesca(Mero);
+        float rot = Mathf.Atan2(-direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, rot - 90);
     }
     
     void OnCollisionEnter2D(Collision2D col)
@@ -41,7 +47,10 @@ public class Harpoon : MonoBehaviour
         // Atingiu uma pedra.
         if(col.gameObject.layer == 6)
         {
-            Destroy(gameObject);
+           // Destroy(gameObject);
+           Pesca(Barco);
+           pescou = false;
+           puxando = false;
         }
     }
     public void Pesca(Transform move)
@@ -51,7 +60,7 @@ public class Harpoon : MonoBehaviour
         direction = (Gobject - (Vector2)transform.position).normalized;
         rb.linearVelocity = new Vector2(direction.x * speed, direction.y * speed);
     }
-    void Update()
+    void  Update()
     {
 
         //tempo de vida
