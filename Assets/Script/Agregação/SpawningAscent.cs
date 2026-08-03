@@ -41,8 +41,6 @@ public class SpawningAscent : MonoBehaviour
     public float strenght;
     private TrailRenderer line;
 
-    public Color circleColor = Color.yellow;
-
     void Awake()
     {
         nav = GetComponent<NavMeshAgent>();
@@ -65,7 +63,6 @@ public class SpawningAscent : MonoBehaviour
             nav.enabled = false;
 
                 ZigzagMovement();
-                SphereHelp();
                 DrawLine(true);
         }
         else
@@ -89,30 +86,13 @@ public class SpawningAscent : MonoBehaviour
             transform.localScale = Vector3.MoveTowards(transform.localScale, new Vector3(-1, 1, 1), _time);
         }
     }
-    IEnumerator AddAmplitude()
-    {
-        yield return new WaitForSeconds(0.5f);
-        _amplitude += gainAmplitude;
-    }
     void ZigzagMovement()
     {
         timeZZ += Time.deltaTime;
-        //StartCoroutine(AddAmplitude());
         Vector2 mov = pos + Vector2.up * (timeZZ * speed);
         direction = Mathf.Sin(timeZZ * _frequency);
         mov += (Vector2)axis.normalized * direction * _amplitude;
         transform.position = mov;
-    }
-    void SphereHelp()
-    {
-        Collider2D collider = Physics2D.OverlapCircle(transform.position, radius, mask);
-        Vector3 direction = transform.position - collider.gameObject.transform.position;
-        collider.GetComponent<Rigidbody2D>().AddForceAtPosition(direction.normalized * strenght, transform.position, ForceMode2D.Force);
-    }
-    private void OnDrawGizmosSelected()
-    {
-        Handles.color = circleColor;
-        Handles.DrawWireDisc(transform.position, Vector3.forward, radius);
     }
     void DrawLine(bool draw)
     {

@@ -290,6 +290,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110788486}
   m_CullTransparentMesh: 1
+--- !u!1 &182272535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182272537}
+  - component: {fileID: 182272536}
+  m_Layer: 0
+  m_Name: QuickTimeEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &182272536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182272535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a457c80517f7e0d48873271a429322f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventFishing
+  zoom: {fileID: 519420034}
+  follow: {fileID: 519420033}
+  eventFished: 0
+  time: 0
+  timeEscape: 5
+  input_system: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  input:
+    m_Name: Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: b8fb25c7-102a-4a5c-b693-051a8e2cf7cc
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  force: 200
+  pull: 0.8
+  limitForce: 900
+  limitPull: -900
+  timeScale: 0.2
+  EventInterface: {fileID: 372765701}
+  imagem: {fileID: 1371219172}
+--- !u!4 &182272537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182272535}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &219525905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1454,7 +1520,7 @@ PrefabInstance:
     - target: {fileID: 5375844006163632764, guid: 9f973ac1c2dccab42a00775ba9eb0d1f, type: 3}
       propertyPath: QuickTimeEvent
       value: 
-      objectReference: {fileID: 803822656}
+      objectReference: {fileID: 182272535}
     - target: {fileID: 5498291455573078809, guid: 9f973ac1c2dccab42a00775ba9eb0d1f, type: 3}
       propertyPath: m_Name
       value: Boat
@@ -1679,7 +1745,6 @@ GameObject:
   - component: {fileID: 803822659}
   - component: {fileID: 803822658}
   - component: {fileID: 803822657}
-  - component: {fileID: 803822661}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1770,40 +1835,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &803822661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 803822656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a457c80517f7e0d48873271a429322f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventFishing
-  zoom: {fileID: 519420034}
-  follow: {fileID: 519420033}
-  eventFished: 0
-  time: 0
-  timeEscape: 5
-  input_system: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  input:
-    m_Name: Input
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: b8fb25c7-102a-4a5c-b693-051a8e2cf7cc
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  force: 200
-  pull: 0.8
-  limitForce: 900
-  limitPull: -900
-  timeScale: 0.2
-  EventInterface: {fileID: 372765701}
-  imagem: {fileID: 1371219172}
 --- !u!1 &812144657
 GameObject:
   m_ObjectHideFlags: 0
@@ -4299,7 +4330,7 @@ RectTransform:
   m_GameObject: {fileID: 1668560969}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1911.005, y: 53.19149, z: 160.27}
+  m_LocalScale: {x: 2043.73, y: 73.87766, z: 222.59901}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 372765702}
@@ -6127,3 +6158,4 @@ SceneRoots:
   - {fileID: 6272813281117321520}
   - {fileID: 544723925}
   - {fileID: 803822660}
+  - {fileID: 182272537}
