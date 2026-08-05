@@ -17,6 +17,7 @@ public class FSM : MonoBehaviour
     public bool endMateChoice;
     public bool ready = false;
     public float speed_start;
+    public bool call = true;
 
 
     bool random = true;
@@ -60,23 +61,27 @@ public class FSM : MonoBehaviour
                     transform.position = Vector3.MoveTowards(transform.position, startReproducy.position, strength);
                     float distance = Vector3.Distance(transform.position, startReproducy.position);
                     if (distance < 1f)
+                    {
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
                     ready = true;
+                    }
                 }
                 else
                 {
                     eventMateChoice.Control();
-                    if(eventMateChoice.end) SetEstados(MeroEstados.SpawningAscent); 
+                    if(eventMateChoice.end) 
+                        SetEstados(MeroEstados.SpawningAscent);    
                 }
 
                 break;
             case MeroEstados.SpawningAscent:
-                    
+                GameEvents.Instance.AscentReproduceEnter(this.gameObject); 
                 spawningAscent.Control();
 
                 break;
-
-            case MeroEstados.Spawning:
-
+            case MeroEstados.Spawning: 
+                //GameEvents.Instance.AscentReproduceExit(this.gameObject);
+               
                 break;
 
         }
@@ -87,7 +92,7 @@ public class FSM : MonoBehaviour
     }
 
     //Functions
-    void SetEstados(MeroEstados novoEstado)
+    public void SetEstados(MeroEstados novoEstado)
     {
         EstadoAtual = novoEstado;
     }

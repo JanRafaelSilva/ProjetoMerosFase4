@@ -61,9 +61,8 @@ public class SpawningAscent : MonoBehaviour
         {
             //movimento
             nav.enabled = false;
-
-                ZigzagMovement();
-                DrawLine(true);
+            ZigzagMovement();
+            DrawLine(true);
         }
         else
         {
