@@ -1582,6 +1582,7 @@ MonoBehaviour:
   spawing: {fileID: 0}
   startReproducy: {fileID: 161336145}
   eventMateChoice: {fileID: 1174627113}
+  meroFollow: {fileID: 1756766802}
   MateChoiceTime: 3
   endMateChoice: 0
   ready: 0
@@ -2587,10 +2588,10 @@ MonoBehaviour:
   _frequency: 2
   _amplitude: 2
   time: 0
-  y: 0
   layer_bigger: 2
-  layer_smaller: 1
+  layer_smaller: 0
   time_start: 2
+  follow: 1
 --- !u!1 &1860563155
 GameObject:
   m_ObjectHideFlags: 0

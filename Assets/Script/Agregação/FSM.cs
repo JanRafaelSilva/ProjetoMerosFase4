@@ -13,6 +13,7 @@ public class FSM : MonoBehaviour
     [SerializeField] private Spawning spawing;
     [SerializeField] private Transform startReproducy;
     [SerializeField] private Event eventMateChoice;
+    [SerializeField] private MeroFollow meroFollow;
     public float MateChoiceTime;
     public bool endMateChoice;
     public bool ready = false;
@@ -75,9 +76,9 @@ public class FSM : MonoBehaviour
 
                 break;
             case MeroEstados.SpawningAscent:
-                GameEvents.Instance.AscentReproduceEnter(this.gameObject); 
+                AscentEnter();
                 spawningAscent.Control();
-
+                
                 break;
             case MeroEstados.Spawning: 
                 //GameEvents.Instance.AscentReproduceExit(this.gameObject);
@@ -95,5 +96,13 @@ public class FSM : MonoBehaviour
     public void SetEstados(MeroEstados novoEstado)
     {
         EstadoAtual = novoEstado;
+    }
+    public void AscentEnter()
+    {
+        GameEvents.Instance.AscentReproduceEnter(this.gameObject);
+    }
+    public void AscentExit()
+    {
+        GameEvents.Instance.AscentReproduceExit(this.gameObject);
     }
 }

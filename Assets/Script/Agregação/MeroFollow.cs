@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,13 +9,12 @@ public class MeroFollow : MonoBehaviour
     [SerializeField] private GameObject id;
     public float dinx,diny, speed;
     public float _frequency = 1.0f;
-    private Vector3 axis;
     public float _amplitude;
     public float time;
-    public float y;
     private SpriteRenderer sprite;
     public int layer_bigger, layer_smaller;
     public float time_start;
+    public bool follow;
 
     private void OnEnable()
     {
@@ -40,32 +40,28 @@ public class MeroFollow : MonoBehaviour
             time_start-= Time.deltaTime;
             if(action.IsPressed())
             {
-                axis = transform.up;
                 time += Time.deltaTime;
                 float x = id.transform.localScale.x >= 1 ? dinx * -1 : dinx;
-                y = Mathf.Cos(_frequency * time) * _amplitude;
+                float y = Mathf.Cos(_frequency * time) * _amplitude;
                 transform.localScale = new Vector3(id.transform.localScale.x, 1f, 1f);
                 Vector3 id_pos = new Vector3(Mathf.MoveTowards(transform.position.x, id.transform.position.x + x, speed), id.transform.position.y + y, id.transform.position.z);
+                transform.position = id_pos;
                 if(y >= (_amplitude - 0.1f)) sprite.sortingOrder = layer_bigger;
                 if(y <= ((_amplitude * -1) + 0.1f)) sprite.sortingOrder = layer_smaller;
             }else if(time_start <= 0f)
             {
-                Debug.Log("tempo acabou");
-                GameEvents.Instance.AscentReproduceEnter(null);
-                //GameEvents.Instance.AscentReproduceExit(null);
+                GameEvents.Instance.OnAscentReproduceEnter -= FollowEnter;
             }
             if(action.WasCompletedThisFrame())
             {
-                Debug.Log("voce soltou o botão");
-                GameEvents.Instance.AscentReproduceEnter(null);
-                //GameEvents.Instance.AscentReproduceExit(null);
+                GameEvents.Instance.OnAscentReproduceEnter -= FollowEnter;
             }
 
     }
     private void FollowExit(GameObject id)
     {
        // GameEvents.Instance.OnAscentReproduceEnter -= FollowEnter;
-        Debug.Log("ta bommm");
+       Debug.Log("Entrou aqui:");
         id.GetComponent<SpawningCall>().enabled = true;
     }
 }
