@@ -50,11 +50,17 @@ public class MeroFollow : MonoBehaviour
                 if(y <= ((_amplitude * -1) + 0.1f)) sprite.sortingOrder = layer_smaller;
             }else if(time_start <= 0f)
             {
-                GameEvents.Instance.OnAscentReproduceEnter -= FollowEnter;
+                //IsAscentEnterEmpty();
+                id.GetComponent<FSM>().stop = true;
+                GameEvents.Instance.AscentReproduceExit(null);
+                //Debug.Log("funcionou");
             }
             if(action.WasCompletedThisFrame())
             {
-                GameEvents.Instance.OnAscentReproduceEnter -= FollowEnter;
+                //IsAscentEnterEmpty();
+                id.GetComponent<FSM>().stop = true;
+                GameEvents.Instance.AscentReproduceExit(null);
+                //Debug.Log("funcionou");
             }
 
     }

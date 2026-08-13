@@ -14,14 +14,14 @@ public class FSM : MonoBehaviour
     [SerializeField] private Transform startReproducy;
     [SerializeField] private Event eventMateChoice;
     [SerializeField] private MeroFollow meroFollow;
+    [SerializeField] private GameEvents manager;
     public float MateChoiceTime;
     public bool endMateChoice;
     public bool ready = false;
     public float speed_start;
     public bool call = true;
+    public bool stop;
 
-
-    bool random = true;
     //Estados
     private void Awake()
     {
@@ -99,10 +99,10 @@ public class FSM : MonoBehaviour
     }
     public void AscentEnter()
     {
+        if(!stop)
+        {
         GameEvents.Instance.AscentReproduceEnter(this.gameObject);
-    }
-    public void AscentExit()
-    {
-        GameEvents.Instance.AscentReproduceExit(this.gameObject);
+        }
+
     }
 }
