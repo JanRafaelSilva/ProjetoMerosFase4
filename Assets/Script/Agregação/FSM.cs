@@ -99,10 +99,7 @@ public class FSM : MonoBehaviour
     }
     public void AscentEnter()
     {
-        if(!stop)
-        {
         GameEvents.Instance.AscentReproduceEnter(this.gameObject);
-        }
 
     }
 }
