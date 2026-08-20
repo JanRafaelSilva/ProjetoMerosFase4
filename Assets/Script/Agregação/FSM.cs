@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using static FSM;
+using UnityEngine.AI;
 
 public class FSM : MonoBehaviour
 {
@@ -15,27 +16,31 @@ public class FSM : MonoBehaviour
     [SerializeField] private Event eventMateChoice;
     [SerializeField] private MeroFollow meroFollow;
     [SerializeField] private GameEvents manager;
+    public NavMeshAgent nav;
     public float MateChoiceTime;
     public bool endMateChoice;
     public bool ready = false;
     public float speed_start;
     public bool call = true;
     public bool stop;
+    private float distance;
+    public bool Return = true;
 
     //Estados
     private void Awake()
     {
         sex = GetComponent<Sex>();
+        nav = GetComponent<NavMeshAgent>();
     }
     public enum MeroEstados
     {
         Movement,//vagar
-        MateChoice,//seleção sexual
+        Start_Return,//seleção sexual e retorno
         SpawningAscent,//subida
         Spawning,// desova
     }
     public MeroEstados EstadoAtual = MeroEstados.Movement;
-
+    
     private void Start()
     {
         SetEstados(MeroEstados.Movement);
@@ -51,28 +56,44 @@ public class FSM : MonoBehaviour
                 {
                     spawningCall.Control();
                     if (spawningCall.Allow == true) 
-                    SetEstados(MeroEstados.MateChoice);
+                    SetEstados(MeroEstados.Start_Return);
                 }
                 break;
-            case MeroEstados.MateChoice:
-                
-                if(!ready){
-                    
-                    float strength = speed_start * Time.deltaTime;
-                    transform.position = Vector3.MoveTowards(transform.position, startReproducy.position, strength);
-                    float distance = Vector3.Distance(transform.position, startReproducy.position);
+            case MeroEstados.Start_Return:
+
+                //possivelmente ser apenas o movimento de ir para o meio e voltar para a reprodução
+                attraction();
+                if (Return)
+                {
                     if (distance < 1f)
                     {
-                    transform.rotation = Quaternion.Euler(0, 0, 0);
-                    ready = true;
+                        transform.rotation = Quaternion.Euler(0, 0, 0);
+                        spawningCall.startRandom = true;
+                        nav.enabled = true;
+                        eventMateChoice.end = false;
+                        eventMateChoice.discontTime = 0f;
+                        SetEstados(MeroEstados.Movement);
                     }
-                }
-                else
-                {
-                    eventMateChoice.Control();
-                    if(eventMateChoice.end) 
-                        SetEstados(MeroEstados.SpawningAscent);    
-                }
+                }else{
+                    if(!ready){
+                        if (distance < 1f)
+                        {
+                            transform.rotation = Quaternion.Euler(0, 0, 0);
+                            ready = true;
+                            nav.enabled = false;
+                        }
+                        }
+                        else
+                        {
+                            eventMateChoice.Control();
+                            if(eventMateChoice.end) {
+                            SetEstados(MeroEstados.SpawningAscent);  
+                            Return = true;
+                            ready = false;
+                            spawningCall.Allow = false;
+                        }  
+                        }
+                    }
 
                 break;
             case MeroEstados.SpawningAscent:
@@ -101,5 +122,11 @@ public class FSM : MonoBehaviour
     {
         GameEvents.Instance.AscentReproduceEnter(this.gameObject);
 
+    }
+    void attraction()
+    {
+        float strength = speed_start * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, startReproducy.position, strength);
+        distance = Vector3.Distance(transform.position, startReproducy.position);
     }
 }

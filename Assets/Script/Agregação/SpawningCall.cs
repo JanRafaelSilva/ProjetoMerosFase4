@@ -1,6 +1,5 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class SpawningCall : MonoBehaviour
 {
@@ -20,6 +19,7 @@ public class SpawningCall : MonoBehaviour
         if (Allow == true)
         {
             RandomTime();
+            startRandom = false;
         }
     }
     public void Control()

@@ -19,10 +19,6 @@ public class MovePlayer : MonoBehaviour
     {
          rb = GetComponent<Rigidbody2D>();
     }
-    private void Update()
-    {
-        HandleFlip();
-    } 
     public void SetMove(InputAction.CallbackContext context)
     {
         direction = context.ReadValue<Vector2>();
@@ -33,7 +29,7 @@ public class MovePlayer : MonoBehaviour
     }
     public void Movimento()
     {
-
+        HandleFlip();
         rb.AddForce(direction * speed);
         rb.linearVelocity = new Vector2(Mathf.Clamp(rb.linearVelocity.x, moveMin, moveMax),Mathf.Clamp(rb.linearVelocity.y, moveMin, moveMax));
         if(direction == Vector2.zero){

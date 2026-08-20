@@ -19,8 +19,6 @@ public class SpawningAscent : MonoBehaviour
 
     public Transform destinationY;
 
-    //Nav
-    public NavMeshAgent nav;
 
     //mov
     public float rot;
@@ -43,7 +41,6 @@ public class SpawningAscent : MonoBehaviour
 
     void Awake()
     {
-        nav = GetComponent<NavMeshAgent>();
         line = GetComponent<TrailRenderer>();
     }
     private void Start()
@@ -60,7 +57,6 @@ public class SpawningAscent : MonoBehaviour
         if (transform.position.y <= destinationY.position.y)
         {
             //movimento
-            nav.enabled = false;
             ZigzagMovement();
             DrawLine(true);
         }
