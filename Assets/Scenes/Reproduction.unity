@@ -1410,11 +1410,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a21faa82c90aab84d86e3ece505bc75f, type: 2}
     - target: {fileID: 7356614683133810380, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: max
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7356614683133810380, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: min
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7356614683133810380, guid: 1297d60364e023949936b2b5de014e71, type: 3}
       propertyPath: control
@@ -1583,11 +1583,15 @@ MonoBehaviour:
   startReproducy: {fileID: 161336145}
   eventMateChoice: {fileID: 1174627113}
   meroFollow: {fileID: 1756766802}
+  manager: {fileID: 0}
+  nav: {fileID: 0}
   MateChoiceTime: 3
   endMateChoice: 0
   ready: 0
   speed_start: 4
   call: 1
+  stop: 0
+  Return: 0
   EstadoAtual: 0
 --- !u!96 &970024168
 TrailRenderer:
@@ -2584,7 +2588,7 @@ MonoBehaviour:
   id: {fileID: 0}
   dinx: 2.5
   diny: -1
-  speed: 0.08
+  speed: 0.05
   _frequency: 2
   _amplitude: 2
   time: 0
